@@ -1,0 +1,180 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: R. Weizmann Kiendrebeogo
+  given: Weizmann
+  family: Kiendrebeogo
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+role: Postdoctoral Researcher
+affiliations:
+  - name: IRFU / CEA Paris-Saclay
+    url: https://irfu.cea.fr/
+links:
+  - icon: at-symbol
+    url: mailto:weizmann.kiendrebeogo@oca.eu
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/weizmannk
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-9108-5059
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=BtijpuEAAAAJ
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/weizmann-kiendrebeogo/
+interests:
+  - Multi-messenger Astronomy
+  - Gravitational Waves
+  - Time-Domain Astronomy
+  - Kilonovae and Compact Binary Mergers
+  - Observation Planning and Scheduling
+  - Bayesian Inference
+  - Machine Learning and Deep Learning for Astronomy
+education:
+  - degree: PhD in Planetary and Universe Sciences
+    institution: Université Côte d'Azur
+    end: '2024-09-01'
+    summary: Developments for the observation and characterization of gravitational-wave multi-messenger
+      sources during LIGO-Virgo-KAGRA observation campaigns
+  - degree: M.Sc. (Master II) in Astrophysics & Materials
+    institution: Université Joseph Ki-Zerbo
+    end: '2020-12-01'
+    summary: ''
+  - degree: B.Sc. in Fundamental Physics
+    institution: Université Nazi Boni
+    end: '2017-10-01'
+    summary: ''
+  - degree: Two-year university degree in Mathematics, Physics & Computer Science (MPI)
+    institution: Université Nazi Boni
+    end: '2016-01-01'
+    summary: ''
+experience:
+  - role: Postdoctoral Researcher
+    org: IRFU / CEA Paris-Saclay
+    start: '2025-01-01'
+    summary: Development and maintenance of Astro-COLIBRI, a platform for real-time multi-wavelength and
+      multi-messenger transient analysis (ANR MOTS project). Multi-messenger follow-up strategies and
+      low-latency inference for gravitational-wave counterparts.
+  - role: Full-Time Physics and Chemistry Teacher (High School)
+    org: Complexe Scolaire Sainte Marie Eugénie
+    start: '2018-01-01'
+    summary: ''
+    end: '2021-01-01'
+skills:
+  - name: Programming
+    items:
+      - label: Python (advanced)
+        level: null
+      - label: C/C++
+        level: null
+      - label: Bash
+        level: null
+      - label: Dart / Flutter (Astro-COLIBRI mobile app)
+        level: null
+      - label: LaTeX
+        level: null
+  - name: Scientific computing
+    items:
+      - label: NumPy
+        level: null
+      - label: SciPy
+        level: null
+      - label: pandas
+        level: null
+      - label: Astropy
+        level: null
+      - label: Matplotlib
+        level: null
+      - label: CuPy (GPU-accelerated arrays)
+        level: null
+      - label: HEALPix / ligo.skymap
+        level: null
+  - name: Machine learning
+    items:
+      - label: PyTorch
+        level: null
+      - label: TensorFlow
+        level: null
+      - label: scikit-learn
+        level: null
+      - label: Deep learning for time series (CNN)
+        level: null
+  - name: Bayesian inference
+    items:
+      - label: bilby
+        level: null
+      - label: NMMA
+        level: null
+      - label: Nested sampling
+        level: null
+      - label: MCMC
+        level: null
+      - label: Population inference
+        level: null
+  - name: Software engineering
+    items:
+      - label: Git (GitHub, GitLab)
+        level: null
+      - label: Docker
+        level: null
+      - label: pytest
+        level: null
+      - label: PyPI/conda
+        level: null
+      - label: CI/CD
+        level: null
+      - label: REST APIs
+        level: null
+      - label: Technical documentation (Sphinx, MkDocs, Read the Docs)
+        level: null
+  - name: High-performance computing
+    items:
+      - label: HTCondor and SLURM clusters
+        level: null
+      - label: Large-scale simulation campaigns (>20M injections)
+        level: null
+languages:
+  - name: French
+    label: native
+  - name: English
+    label: fluent, working language
+  - name: Mooré
+    label: native
+awards:
+  - title: Qualification for Associate Professor (Maître de conférences)
+    awarder: French National Council of Universities (CNU), Section 34 — Astrophysics
+    date: '2026'
+  - title: Gravitational Waves / Multi-Messenger Astronomy Axis Award
+    awarder: Observatoire de la Côte d'Azur, Nice, France
+    date: '2023'
+  - title: Projet d'Appui à l'Enseignement Supérieur (PAES)
+    awarder: Université Joseph Ki-Zerbo, Ouagadougou, Burkina Faso
+    date: 2023-01
+  - title: Heising-Simons Foundation, grant 2021-2975
+    awarder: Las Cumbres Observatory
+    date: 2022-06
+  - title: CNRS Sub-Saharan Africa Grant
+    awarder: Astrophysics and Planetary Sciences in West Africa (AWA)
+    date: 2021-11
+  - title: Henri Poincaré Junior Program
+    awarder: Observatoire de la Côte d'Azur, Nice, France
+    date: 2020-08
+postnominals:
+  - PhD
+status:
+  icon: ''
+bio: |
+  Weizmann Kiendrebeogo is a postdoctoral researcher at IRFU / CEA Paris-Saclay,
+  working on multi-messenger astronomy and gravitational waves. He develops and
+  maintains Astro-COLIBRI, a real-time platform for multi-wavelength and
+  multi-messenger transient analysis, and works on low-latency inference for
+  gravitational-wave counterparts.
+
+  He is a member of the LIGO-Virgo-KAGRA and GRANDMA collaborations. His path
+  into gravitational-wave science began by modeling the black-hole-vs-wormhole
+  imaging of M87* with Event Horizon Telescope data. Since then his work has
+  spanned compact binary coalescences, observation planning, and Bayesian
+  inference for multi-messenger follow-up. He completed his PhD in Planetary
+  and Universe Sciences at Université Côte d'Azur in 2024.

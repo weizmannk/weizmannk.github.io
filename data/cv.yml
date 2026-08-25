@@ -1,0 +1,362 @@
+# ============================================================================
+# data/cv.yml — single source of truth for everything about R. Weizmann
+# Kiendrebeogo's CV that ISN'T a publication (publications live in
+# bibliography/publications.bib instead).
+#
+# Edit this file by hand. Two scripts read it:
+#   scripts/sync_authors_data.py   -> refreshes data/authors/me.yaml (site)
+#   scripts/build_cv.py            -> renders the LaTeX CV PDF (step 4)
+#
+# Plain YAML, no Hugo-specific syntax — safe to edit without knowing Hugo.
+# Never invent a date, grant amount, or detail that isn't here: leave the
+# field blank and flag it instead.
+# ============================================================================
+
+identity:
+  name:
+    display: R. Weizmann Kiendrebeogo
+    given: Weizmann
+    family: Kiendrebeogo
+  postnominals:
+    - PhD
+  role: Postdoctoral Researcher
+  affiliation:
+    name: IRFU / CEA Paris-Saclay
+    url: https://irfu.cea.fr/
+  location: Gif-sur-Yvette, France
+  emails:
+    - weizmann.kiendrebeogo@oca.eu
+    - ramodgwende-weizmann.kiendrebeogo@cea.fr
+  # NOTE: scripts/build_cv.py (step 4) must only put github/orcid/
+  # google_scholar in the PDF header, matching main_CV.tex — linkedin is
+  # website-only, not wanted in the CV PDF.
+  links:
+    github: https://github.com/weizmannk
+    orcid: https://orcid.org/0000-0002-9108-5059
+    google_scholar: https://scholar.google.com/citations?user=BtijpuEAAAAJ
+    linkedin: https://www.linkedin.com/in/weizmann-kiendrebeogo/
+
+research_interests:
+  - Multi-messenger Astronomy
+  - Gravitational Waves
+  - Time-Domain Astronomy
+  - Kilonovae and Compact Binary Mergers
+  - Observation Planning and Scheduling
+  - Bayesian Inference
+  - Machine Learning and Deep Learning for Astronomy
+
+education:
+  - degree: PhD in Planetary and Universe Sciences
+    institution: Université Côte d'Azur
+    location: Nice, France
+    date: 2024-09
+    summary: >-
+      Joint supervision with Université Joseph Ki-Zerbo, Ouagadougou,
+      Burkina Faso.
+    thesis:
+      title: >-
+        Developments for the observation and characterization of
+        gravitational-wave multi-messenger sources during
+        LIGO-Virgo-KAGRA observation campaigns
+      url: https://theses.hal.science/tel-04796327
+  - degree: M.Sc. (Master II) in Astrophysics & Materials
+    institution: Université Joseph Ki-Zerbo
+    location: Ouagadougou, Burkina Faso
+    date: 2020-12
+  - degree: B.Sc. in Fundamental Physics
+    institution: Université Nazi Boni
+    location: Bobo-Dioulasso, Burkina Faso
+    date: 2017-10
+  - degree: Two-year university degree in Mathematics, Physics & Computer Science (MPI)
+    institution: Université Nazi Boni
+    location: Bobo-Dioulasso, Burkina Faso
+    date: 2016
+
+appointments:
+  - role: Postdoctoral Researcher
+    institution: IRFU / CEA Paris-Saclay
+    location: France
+    start: 2025-01
+    end: present
+    summary: >-
+      Development and maintenance of Astro-COLIBRI, a platform for
+      real-time multi-wavelength and multi-messenger transient analysis
+      (ANR MOTS project). Multi-messenger follow-up strategies and
+      low-latency inference for gravitational-wave counterparts.
+  - role: Full-Time Physics and Chemistry Teacher (High School)
+    institution: Complexe Scolaire Sainte Marie Eugénie
+    location: Ouagadougou, Burkina Faso
+    start: 2018
+    end: 2021
+
+honors:
+  - title: Qualification for Associate Professor (Maître de conférences)
+    awarder: French National Council of Universities (CNU), Section 34 — Astrophysics
+    date: 2026
+
+grants:
+  - title: INSU (CNRS) Research Grant — AAP ASTRO + PNP 2026
+    date: 2026
+    role: Principal Investigator
+    amount: "€5,900 (Priority P0)"
+    summary: >-
+      Funds a 6-month M2 research internship. Project: Optimized GW
+      Detection and Multi-Messenger Follow-Up (Rubin Observatory, CTAO).
+      International co-supervision: IRFU/CEA, ARTEMIS (OCA), and
+      Université Joseph Ki-Zerbo.
+
+fellowships:
+  - title: Gravitational Waves / Multi-Messenger Astronomy Axis Award
+    awarder: Observatoire de la Côte d'Azur, Nice, France
+    start: 2023
+    end: 2024
+  - title: Projet d'Appui à l'Enseignement Supérieur (PAES)
+    awarder: Université Joseph Ki-Zerbo, Ouagadougou, Burkina Faso
+    start: 2023-01
+    end: 2023-06
+  - title: Heising-Simons Foundation, grant 2021-2975
+    awarder: Las Cumbres Observatory
+    start: 2022-06
+    end: 2022-08
+  - title: CNRS Sub-Saharan Africa Grant
+    awarder: Astrophysics and Planetary Sciences in West Africa (AWA)
+    start: 2021-11
+    end: 2022-02
+  - title: Henri Poincaré Junior Program
+    awarder: Observatoire de la Côte d'Azur, Nice, France
+    start: 2020-08
+    end: 2020-10
+
+teaching:
+  - role: Principal Investigator and co-supervisor, M2 research internship (6 months)
+    date: 2026
+    summary: >-
+      Funded by the INSU (CNRS) AAP ASTRO + PNP grant; co-supervision
+      across IRFU/CEA, ARTEMIS (OCA), and Université Joseph Ki-Zerbo.
+  - role: Mathematics Teacher (44 hours)
+    institution: Department of Mathematics, Université Côte d'Azur, Nice, France
+    start: 2023
+    end: 2024
+  - role: Research Project Co-Supervisor
+    institution: School of Physics and Astronomy, University of Minnesota, USA
+    start: 2022
+    end: 2023
+    summary: >-
+      Co-supervised one undergraduate (B.Sc., 2022) and one master's
+      (M.Sc., 2023) research project.
+  - role: Physics and Chemistry Teacher (High School), full-time
+    institution: Complexe Scolaire Sainte Marie Eugénie, Ouagadougou, Burkina Faso
+    start: 2018
+    end: 2021
+
+talks:
+  - type: Contributed talk
+    title: Deep Learning Approaches to Gravitational-Wave Detector Noise Subtraction
+    url: https://indico.cern.ch/event/1640502/contributions/7028144/
+    venue: AI for Gravitational Waves Workshop, CERN, Geneva, Switzerland
+    date: 2026-05
+  - type: Contributed talk
+    title: Early UV Follow-up of Gravitational-Wave Events with ULTRASAT
+    url: https://indico.in2p3.fr/event/35174/contributions/152643/
+    venue: Journée de l'ATPEM 2025 (PNHE), Paris, France
+    date: 2025-10
+  - type: Invited speaker
+    title: "M4OPT: Multi-Mission Multi-Messenger Observation Planning Toolkit"
+    url: https://indico.ijclab.in2p3.fr/event/11610/contributions/37496/
+    venue: >-
+      4th Astro-COLIBRI Multi-Messenger Astrophysics Workshop, Institut
+      Pascal, Paris-Saclay, France
+    date: 2025-10
+  - type: Contributed talk
+    title: Application of Non-Linear Noise Regression in the Virgo Detector
+    url: https://acme-grav-waves.sciencesconf.org/data/pages/6_Weizmann_ACME_conference.pdf
+    venue: >-
+      ACME Conference on Gravitational Waves and Multi-Messenger
+      Astronomy, Observatoire Midi-Pyrénées, Toulouse, France
+    date: 2025-04
+  - type: Invited group talk
+    title: Updated Observing Scenarios and H0 Projections for O4 and O5
+    url: https://dcc.ligo.org/G2300953/
+    venue: LVK Cosmology Working Group, internal seminar, online
+    date: 2023-05
+
+service:
+  - role: Referee
+    organization: Science and Technology Review, CNRST, Burkina Faso
+    date: 2026-01
+  - role: Member
+    organization: LIGO-Virgo-KAGRA Collaboration
+  - role: Member
+    organization: GRANDMA Collaboration
+  - role: Maintainer
+    organization: NMMA, Astro-COLIBRI, tilepy, M4OPT, GWEMOPT
+  - role: Contributor
+    organization: >-
+      Observing Capabilities section of the LVK Public Alerts User
+      Guide — the reference resource used by the electromagnetic
+      follow-up community.
+
+schools_workshops:
+  - title: 2nd MaNiTou International Summer School on Gravitational Waves
+    venue: Observatoire de la Côte d'Azur, Université Côte d'Azur, Nice, France
+    date: 2023-07-03/2023-07-08
+  - title: Research visit — collaboration on the Vera C. Rubin Observatory (LSST) project
+    venue: School of Physics and Astronomy, University of Minnesota, USA
+    date: 2022-06/2022-09
+  - title: "Internship — gravitational waves from EMRIs and the stochastic background"
+    venue: Observatoire de la Côte d'Azur, Nice, France
+    date: 2020-08/2020-10
+  - title: "Internship — imaging differences for M87* modelled as a rotating black hole vs. a rotating wormhole"
+    venue: Observatoire de Paris, Meudon, France
+    date: 2020-01/2020-03
+  - title: WAISSYA (West African Summer School for Young Astronomers), postgraduate stream
+    venue: Obasanjo Space Centre, Abuja, Nigeria
+    date: 2019-11
+
+open_source:
+  - name: NMMA-Astro-COLIBRI
+    description: >-
+      Reproducibility package for an automated supernova light-curve
+      classification service, built on the NMMA nested-sampling
+      framework; includes the fits and analysis scripts behind the
+      SN 2021ugl case study.
+    links:
+      - https://nmma.live/
+      - https://github.com/astro-transients/nmma-astrocolibri-sn2021ugl
+  - name: Astro-COLIBRI
+    description: >-
+      Real-time multi-messenger astrophysics platform: a public API,
+      cloud alert system, and website/mobile apps that filter and
+      contextualize incoming alerts (GRBs, FRBs, supernovae,
+      gravitational waves) so astronomers can react quickly to
+      transient events.
+    links:
+      - https://astro-colibri.com
+  - name: SkyPortal
+    description: >-
+      Collaborative astronomical data platform for time-domain
+      astronomy, providing the infrastructure to manage, visualize, and
+      analyze transient discoveries across a research team.
+    links:
+      - https://github.com/skyportal/skyportal
+  - name: NMMA
+    description: >-
+      Python library for nuclear physics and multi-messenger inference,
+      combining gravitational-wave, electromagnetic, and other data to
+      constrain the physics of binary neutron star mergers.
+    links:
+      - https://github.com/nuclear-multimessenger-astronomy/nmma
+  - name: M4OPT
+    description: >-
+      Open-source toolkit that jointly solves telescope tiling and
+      scheduling via mixed-integer programming, coordinating space- and
+      ground-based observatories for rapid follow-up of
+      gravitational-wave and neutrino events.
+    links:
+      - https://github.com/m4opt/m4opt
+  - name: tilepy
+    description: >-
+      Python package for gravitational-wave follow-up scheduling with
+      Imaging Atmospheric Cherenkov Telescopes (IACTs), tiling the
+      sky-localization region to optimize observation strategy when GW
+      events are poorly localized.
+    links:
+      - https://github.com/astro-transients/tilepy
+  - name: GWEMOPT
+    description: >-
+      Tool for optimizing electromagnetic follow-up of gravitational-
+      wave events, coordinating multi-telescope tiling searches to
+      efficiently locate optical/IR counterparts.
+    links:
+      - https://github.com/skyportal/gwemopt
+  - name: ligo.skymap
+    description: >-
+      Toolkit for reading, writing, generating, and visualizing
+      gravitational-wave probability sky maps, including the BAYESTAR
+      rapid-localization algorithm and 3D sky map analysis.
+    links:
+      - https://lscsoft.docs.ligo.org/ligo.skymap/
+  - name: observing-scenarios-simulations
+    description: >-
+      Scripts and data generating LIGO/Virgo/KAGRA compact-binary-
+      coalescence observing-scenario predictions, simulating source
+      populations and sky localization with BAYESTAR.
+    links:
+      - https://github.com/lpsinger/observing-scenarios-simulations
+  - name: DeepClean / Virgo-DeepClean
+    description: >-
+      1D convolutional neural network for non-linear, non-stationary
+      noise subtraction in GW data.
+    links:
+      - https://github.com/weizmannk/Virgo-DeepClean
+  - name: cbc-population-distributions
+    description: >-
+      Tools to draw compact-binary-coalescence populations from the
+      GWTC-4.0 model (FullPop-4.0 component-mass distribution,
+      power-law redshift distribution) for large-scale population
+      sampling and visualization.
+    links:
+      - https://cbc-population-distributions.readthedocs.io/en/latest/
+  - name: EarthOrbitPlan
+    description: >-
+      Educational framework walking students and researchers through an
+      end-to-end compact-binary-coalescence workflow, from
+      gravitational-wave detection to planning electromagnetic
+      follow-up campaigns across multiple telescopes.
+    links:
+      - https://earthorbitplan.readthedocs.io/en/latest/
+
+# NOTE: main_CV.tex flagged this section itself with "TODO: check and
+# adjust — drafted from the rest of the CV." Carried over verbatim from
+# the CV as a starting point; please review skill levels/grouping.
+skills:
+  - category: Programming
+    items:
+      - Python (advanced)
+      - C/C++
+      - Bash
+      - Dart / Flutter (Astro-COLIBRI mobile app)
+      - LaTeX
+  - category: Scientific computing
+    items:
+      - NumPy
+      - SciPy
+      - pandas
+      - Astropy
+      - Matplotlib
+      - CuPy (GPU-accelerated arrays)
+      - HEALPix / ligo.skymap
+  - category: Machine learning
+    items:
+      - PyTorch
+      - TensorFlow
+      - scikit-learn
+      - Deep learning for time series (CNN)
+  - category: Bayesian inference
+    items:
+      - bilby
+      - NMMA
+      - Nested sampling
+      - MCMC
+      - Population inference
+  - category: Software engineering
+    items:
+      - Git (GitHub, GitLab)
+      - Docker
+      - pytest
+      - PyPI/conda
+      - CI/CD
+      - REST APIs
+      - Technical documentation (Sphinx, MkDocs, Read the Docs)
+  - category: High-performance computing
+    items:
+      - HTCondor and SLURM clusters
+      - Large-scale simulation campaigns (>20M injections)
+
+languages:
+  - name: French
+    level: native
+  - name: English
+    level: fluent, working language
+  - name: Mooré
+    level: native

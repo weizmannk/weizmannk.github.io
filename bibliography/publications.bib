@@ -1,0 +1,624 @@
+% ============================================================================
+% publications.bib — single source of truth for R. Weizmann Kiendrebeogo's
+% publications. Feeds both the website (content/publications/) and the CV
+% PDF (scripts/build_cv.py). Regenerated in part by
+% scripts/fetch_publications.py — re-running it is safe (idempotent) and
+% will not touch anything below marked keywords={manual}.
+%
+% Custom fields (beyond standard BibTeX):
+%
+%   publication_type = {refereed | submitted | in_preparation | proceedings
+%                        | collaboration | technical_report}
+%       Required on every entry. Never mixed across sections on the site or
+%       in the CV.
+%
+%   keywords = {manual}
+%       Marks an entry as hand-edited/protected: fetch_publications.py will
+%       never overwrite or reclassify it. Standard bibliographic fields
+%       (author, title, journal, doi, ...) on *unmarked* entries are
+%       refreshed from ADS/ORCID on each run; publication_type/featured/
+%       keywords/highlight are always preserved once set, regardless.
+%
+%   featured = {true}
+%       The ~10 most significant entries, used for the CV `--variant short`
+%       and the site's featured-publications block.
+%
+%   highlight = {...}
+%       Exact substring to bold in `author` for this entry (spelling of the
+%       author's name varies across papers/sources).
+%
+%   review_needed = {true}
+%       Set by fetch_publications.py on newly discovered entries whose
+%       publication_type is a best-effort guess (e.g. from an ORCID work
+%       type) — check it, fix publication_type/fields as needed, then
+%       either remove this field or add keywords={manual}.
+%
+% Author name convention: "Kiendrebeogo" without accents everywhere, even
+% where a source (e.g. a Zenodo or arXiv record) uses "Kiendrébéogo".
+% ============================================================================
+
+@unpublished{kiendrebeogo2026_nmma_astrocolibri,
+  author = {R. Weizmann Kiendrebeogo and others},
+  cite_authors = {\textbf{Kiendrebeogo} et al.},
+  title = {{NMMA--Astro-COLIBRI: An Automated Light-Curve Classification Service for Supernovae in the Multi-Survey Era}},
+  year = {2026},
+  doi = {10.48550/arXiv.2608.17568},
+  url = {https://doi.org/10.48550/arXiv.2608.17568},
+  eprint = {2608.17568},
+  archiveprefix = {arXiv},
+  publication_type = {submitted},
+  order = {1},
+  featured = {true},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Submitted to The Astrophysical Journal Supplement Series}
+}
+
+@misc{kiendrebeogo2026_nmma_fits_sn2021ugl,
+  author = {R. Weizmann Kiendrebeogo and Cornejo Avila and Bisero and Cellier and Ciric and Jaroschewski and Saint-Paul and Sch\"ussler},
+  cite_authors = {\textbf{Kiendrebeogo}, Cornejo Avila, Bisero, Cellier, Ciric, Jaroschewski, Saint-Paul and Sch\"ussler},
+  title = {{NMMA Fits for SN 2021ugl (NMMA--Astro-COLIBRI paper)}},
+  year = {2026},
+  doi = {10.5281/zenodo.21771188},
+  url = {https://doi.org/10.5281/zenodo.21771188},
+  publisher = {Zenodo},
+  version = {v1.0.0},
+  publication_type = {technical_report},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {CV used the accented spelling "Kiendrébéogo" (Zenodo record); normalized per convention.}
+}
+
+@unpublished{kiendrebeogo2026_o4a_strategies,
+  author = {R. Weizmann Kiendrebeogo and others},
+  cite_authors = {\textbf{Kiendrebeogo} et al.},
+  title = {{Refinements of Gravitational-Wave Observation Strategies Using O4a Performance}},
+  year = {2026},
+  publication_type = {in_preparation},
+  order = {4},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {In preparation}
+}
+
+@unpublished{kiendrebeogo2026_ultrasat,
+  author = {R. Weizmann Kiendrebeogo and others},
+  cite_authors = {\textbf{Kiendrebeogo} et al.},
+  title = {{Early UV Follow-up of Gravitational-Wave Events with the Ultraviolet Transient Astronomy Satellite (ULTRASAT)}},
+  year = {2026},
+  publication_type = {in_preparation},
+  order = {3},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {In preparation}
+}
+
+@unpublished{schussler2026_gcn_extraction,
+  author = {F. Sch\"ussler and others},
+  cite_authors = {Sch\"ussler et al.},
+  title = {{AI-Assisted Extraction of Follow-up Observations from GCN Circulars in Astro-COLIBRI}},
+  year = {2026},
+  doi = {10.48550/arXiv.2608.23270},
+  url = {https://doi.org/10.48550/arXiv.2608.23270},
+  eprint = {2608.23270},
+  archiveprefix = {arXiv},
+  publication_type = {submitted},
+  order = {2},
+  featured = {false},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Submitted to Publications of the Astronomical Society of the Pacific}
+}
+
+@article{johnson2026_kilonova_forecasts,
+  author = {Johnson and Sravan and R. Weizmann Kiendrebeogo and Coughlin and Davis and Toivonen and Jegou du Laz and Erb and Ahumada and Barna and Helou and Smith and Rusholme and Laher and Mahabal},
+  cite_authors = {Johnson, Sravan, \textbf{Kiendrebeogo}, Coughlin, Davis, Toivonen, Jegou du Laz, Erb, Ahumada, Barna, Helou, Smith, Rusholme, Laher and Mahabal},
+  title = {{Low-latency Forecasts of Kilonova Light Curves for Rubin and ZTF}},
+  journal = {Publications of the Astronomical Society of the Pacific},
+  year = {2026},
+  volume = {138},
+  eid = {014103},
+  doi = {10.1088/1538-3873/ae2e87},
+  url = {https://doi.org/10.1088/1538-3873/ae2e87},
+  publication_type = {refereed},
+  order = {5},
+  featured = {true},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Restored after being accidentally dropped during a bib rewrite; author given/middle names not verified against ADS, only surnames — cite_authors matches the CV citation string already validated.}
+}
+
+@inproceedings{ashkar2025_tilepy,
+  author = {Halim Ashkar and Monica Seglar-Arroyo and Fabian Sch\"ussler and Weizmann Kiendrebeogo and Mathieu de Bony de Lavergne},
+  cite_authors = {Ashkar, Seglar-Arroyo, Sch\"ussler, \textbf{Kiendrebeogo} and de Bony de Lavergne},
+  title = {{tilepy: Smart Scheduling for Multi-Messenger Astronomy from Earth to Orbit}},
+  booktitle = {Proceedings of the 39th International Cosmic Ray Conference (ICRC2025)},
+  year = {2025},
+  doi = {10.48550/arXiv.2508.07824},
+  url = {https://doi.org/10.48550/arXiv.2508.07824},
+  eprint = {2508.07824},
+  archiveprefix = {arXiv},
+  publication_type = {proceedings},
+  order = {18},
+  featured = {true},
+  highlight = {Weizmann Kiendrebeogo},
+  note = {arXiv record spells the name "Kiendrébéogo"; normalized to unaccented form per convention.}
+}
+
+@article{criswell2025_uvex_em_followup,
+  author = {Alexander W. Criswell and Sydney C. Leggio and Michael W. Coughlin and Leo P. Singer and R. Weizmann Kiendrebeogo and Igor Andreoni and Andrew Toivonen and Hannah P. Earnshaw and Suvi Gezari and Brian W. Grefenstette and Fiona A. Harrison and Mansi M. Kasliwal},
+  cite_authors = {Criswell, Leggio, Coughlin, Singer, \textbf{Kiendrebeogo}, Andreoni, Toivonen, Earnshaw, Gezari, Grefenstette, Harrison and Kasliwal},
+  title = {{Electromagnetic Follow-up to Gravitational Wave Events with the UltraViolet EXplorer (UVEX)}},
+  journal = {Publications of the Astronomical Society of the Pacific},
+  year = {2025},
+  volume = {137},
+  number = {5},
+  eid = {054101},
+  doi = {10.1088/1538-3873/adcd9c},
+  url = {https://doi.org/10.1088/1538-3873/adcd9c},
+  publication_type = {refereed},
+  order = {8},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@misc{kiendrebeogo2025_gwtc4_hyperparams,
+  author = {R. Weizmann Kiendrebeogo and Amanda Farah and Colm Talbot and Michael Coughlin and Leo Singer},
+  cite_authors = {\textbf{Kiendrebeogo}, Farah, Talbot, Coughlin and Singer},
+  title = {{Maximum-Posterior Hyperparameters of the Broken Power Law + 2 Peak Population Model from GWTC-4.0}},
+  year = {2025},
+  url = {https://dcc.ligo.org/LIGO-T2500311/public},
+  howpublished = {LIGO Document T2500311},
+  publication_type = {technical_report},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Year not given in CV; confirmed 2025 from the LIGO DCC record directly.}
+}
+
+@article{kiendrebeogo2025_noise_regression,
+  author = {R. Weizmann Kiendrebeogo and Muhammed Saleem and Marie Anne Bizouard and Andy H. Y. Chen and Nelson Christensen and Chia-Jui Chou and Michael W. Coughlin and Kamiel Janssens and S. Zacharie Kam and Jean Koulidiati and Shu-Wei Yeh},
+  cite_authors = {\textbf{Kiendrebeogo} et al.},
+  title = {{Application of Nonlinear Noise Regression in the Virgo Detector}},
+  journal = {Physical Review D},
+  year = {2025},
+  volume = {112},
+  number = {8},
+  eid = {083053},
+  doi = {10.1103/hwnc-r7yy},
+  url = {https://doi.org/10.1103/hwnc-r7yy},
+  publication_type = {refereed},
+  order = {6},
+  featured = {true},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@misc{lvk2025_allsky_longduration,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{All-sky Search for Long-duration Gravitational-wave Transients in the First Part of the Fourth LIGO--Virgo--KAGRA Observing Run}},
+  year = {2025},
+  url = {https://arxiv.org/abs/2507.12282},
+  eprint = {2507.12282},
+  archiveprefix = {arXiv},
+  publication_type = {collaboration},
+  order = {25}
+}
+
+@article{lvk2025_continuous_gw_pulsars,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{Search for Continuous Gravitational Waves from Known Pulsars in the First Part of the Fourth LIGO--Virgo--KAGRA Observing Run}},
+  journal = {The Astrophysical Journal},
+  year = {2025},
+  volume = {983},
+  pages = {99},
+  doi = {10.3847/1538-4357/adb3a0},
+  url = {https://doi.org/10.3847/1538-4357/adb3a0},
+  publication_type = {collaboration},
+  order = {26}
+}
+
+@misc{lvk2025_gwtc4_catalog,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{GWTC-4.0: Updating the Gravitational-Wave Transient Catalog with Observations from the First Part of the Fourth LIGO--Virgo--KAGRA Observing Run}},
+  year = {2025},
+  url = {https://arxiv.org/abs/2508.18082},
+  eprint = {2508.18082},
+  archiveprefix = {arXiv},
+  publication_type = {collaboration},
+  order = {23}
+}
+
+@misc{lvk2025_gwtc4_intro,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{GWTC-4.0: An Introduction to Version 4.0 of the Gravitational-Wave Transient Catalog}},
+  year = {2025},
+  url = {https://arxiv.org/abs/2508.18080},
+  eprint = {2508.18080},
+  archiveprefix = {arXiv},
+  publication_type = {collaboration},
+  order = {21}
+}
+
+@misc{lvk2025_gwtc4_methods,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{GWTC-4.0: Methods for Identifying and Characterizing Gravitational-wave Transients}},
+  year = {2025},
+  url = {https://arxiv.org/abs/2508.18081},
+  eprint = {2508.18081},
+  archiveprefix = {arXiv},
+  publication_type = {collaboration},
+  order = {22}
+}
+
+@misc{lvk2025_gwtc4_population,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{GWTC-4.0: Population Properties of Merging Compact Binaries}},
+  year = {2025},
+  url = {https://arxiv.org/abs/2508.18083},
+  eprint = {2508.18083},
+  archiveprefix = {arXiv},
+  publication_type = {collaboration},
+  order = {24}
+}
+
+@article{lvk2025_sn2023ixf,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{Search for Gravitational Waves Emitted from SN 2023ixf}},
+  journal = {The Astrophysical Journal},
+  year = {2025},
+  volume = {985},
+  pages = {183},
+  doi = {10.3847/1538-4357/adc681},
+  url = {https://doi.org/10.3847/1538-4357/adc681},
+  publication_type = {collaboration},
+  order = {28}
+}
+
+@article{lvk2025_swift_bat_guano,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{Swift-BAT GUANO Follow-up of Gravitational-wave Triggers in the Third LIGO--Virgo--KAGRA Observing Run}},
+  journal = {The Astrophysical Journal},
+  year = {2025},
+  volume = {980},
+  pages = {207},
+  doi = {10.3847/1538-4357/ad9749},
+  url = {https://doi.org/10.3847/1538-4357/ad9749},
+  publication_type = {collaboration},
+  order = {27}
+}
+
+@misc{schussler2025_astrocolibri_citizen,
+  author = {Sch\"ussler and Cornejo and Costa and Jaroschewski and Kiendrebeogo},
+  cite_authors = {Sch\"ussler, Cornejo, Costa, Jaroschewski and \textbf{Kiendrebeogo}},
+  title = {{Astro-COLIBRI: Empowering Citizen Scientists in Multi-Messenger Astrophysics}},
+  year = {2025},
+  doi = {10.48550/arXiv.2507.10226},
+  url = {https://doi.org/10.48550/arXiv.2507.10226},
+  eprint = {2507.10226},
+  archiveprefix = {arXiv},
+  publication_type = {proceedings},
+  order = {19},
+  keywords = {manual},
+  highlight = {Kiendrebeogo},
+  note = {Given names not available from the arXiv record at fetch time; entry kept manual — see scripts/fetch_publications.py.}
+}
+
+@misc{schussler2025_astrocolibri_platform,
+  author = {Sch\"ussler and Cornejo and Costa and Jaroschewski and Kiendrebeogo},
+  cite_authors = {Sch\"ussler, Cornejo, Costa, Jaroschewski and \textbf{Kiendrebeogo}},
+  title = {{Astro-COLIBRI: A Comprehensive Platform for Real-Time Multi-Messenger Astrophysics}},
+  year = {2025},
+  doi = {10.48550/arXiv.2507.06616},
+  url = {https://doi.org/10.48550/arXiv.2507.06616},
+  eprint = {2507.06616},
+  archiveprefix = {arXiv},
+  publication_type = {proceedings},
+  order = {20},
+  keywords = {manual},
+  highlight = {Kiendrebeogo},
+  note = {Given names not available from the arXiv record at fetch time; entry kept manual — see scripts/fetch_publications.py.}
+}
+
+@article{singer2025_uvex_optimal,
+  author = {Leo P. Singer and Alexander W. Criswell and Sydney C. Leggio and R. Weizmann Kiendrebeogo and Michael W. Coughlin and Hannah P. Earnshaw and Suvi Gezari and Brian W. Grefenstette and Fiona A. Harrison and Mansi M. Kasliwal and Brett M. Morris and Erik Tollerud and S. Bradley Cenko},
+  cite_authors = {Singer, Criswell, Leggio, \textbf{Kiendrebeogo}, Coughlin, Earnshaw, Gezari, Grefenstette, Harrison, Kasliwal, Morris, Tollerud and Cenko},
+  title = {{Optimal Follow-up of Gravitational-wave Events with the UltraViolet EXplorer (UVEX)}},
+  journal = {Publications of the Astronomical Society of the Pacific},
+  year = {2025},
+  volume = {137},
+  number = {7},
+  eid = {074501},
+  doi = {10.1088/1538-3873/adcfc6},
+  url = {https://doi.org/10.1088/1538-3873/adcfc6},
+  publication_type = {refereed},
+  order = {7},
+  featured = {true},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@article{ahumada2024_ztf_o4a,
+  author = {Tom\'as Ahumada and Shreya Anand and Michael W. Coughlin and Vaidehi Gupta and Mansi M. Kasliwal and Viraj R. Karambelkar and Robert D. Stein and Gaurav Waratkar and Vishwajeet Swain and Theophile Jegou du Laz and Akash Anumarlapudi and Igor Andreoni and Mattia Bulla and Gokul P. Srinivasaragavan and Andrew Toivonen and Avery Wold and Eric C. Bellm and S. Bradley Cenko and David L. Kaplan and Jesper Sollerman and Varun Bhalerao and Daniel Perley and Anirudh Salgundi and Aswin Suresh and K-Ryan Hinds and Simeon Reusch and Jannis Necker and David O. Cook and Natalya Pletskova and Leo P. Singer and Smaranika Banerjee and Tyler Barna and Christopher M. Copperwheat and Brian Healy and R. Weizmann Kiendrebeogo and Harsh Kumar and Ravi Kumar and Marianna Pezzella and Ana Sagu\'es-Carracedo and Niharika Sravan and Joshua S. Bloom and Tracy X. Chen and Matthew Graham and George Helou and Russ R. Laher and Ashish A. Mahabal and Josiah Purdum and G. C. Anupama and Sudhanshu Barway and Judhajeet Basu and Dhananjay Raman and Tamojeet Roychowdhury},
+  cite_authors = {Ahumada, \ldots, \textbf{Kiendrebeogo}, \ldots\ et al.},
+  title = {{Searching for Gravitational Wave Optical Counterparts with the Zwicky Transient Facility: Summary of O4a}},
+  journal = {Publications of the Astronomical Society of the Pacific},
+  year = {2024},
+  volume = {136},
+  number = {11},
+  eid = {114201},
+  doi = {10.1088/1538-3873/ad8265},
+  url = {https://doi.org/10.1088/1538-3873/ad8265},
+  publication_type = {refereed},
+  order = {9},
+  featured = {true},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@article{andreoni2024_roman_kilonova,
+  author = {Igor Andreoni and Michael W. Coughlin and Alexander W. Criswell and Mattia Bulla and Andrew Toivonen and Leo P. Singer and Antonella Palmese and E. Burns and Suvi Gezari and Mansi M. Kasliwal and R. Weizmann Kiendrebeogo and Ashish Mahabal and Takashi J. Moriya and Armin Rest and Dan Scolnic and Robert A. Simcoe and Jamie Soon and Robert Stein and Tony Travouillon},
+  cite_authors = {Andreoni, Coughlin, Criswell, Bulla, Toivonen, Singer, Palmese, Burns, Gezari, Kasliwal, \textbf{Kiendrebeogo}, Mahabal, Moriya, Rest, Scolnic, Simcoe, Soon, Stein and Travouillon},
+  title = {{Enabling Kilonova Science with the Nancy Grace Roman Space Telescope}},
+  journal = {Astroparticle Physics},
+  year = {2024},
+  volume = {155},
+  eid = {102904},
+  doi = {10.1016/j.astropartphys.2023.102904},
+  url = {https://doi.org/10.1016/j.astropartphys.2023.102904},
+  publication_type = {refereed},
+  order = {11},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@misc{kiendrebeogo2024_observing_scenarios_20M,
+  author = {R. Weizmann Kiendrebeogo and Michael Coughlin and Anna Plestkova and Nathan Hoggard},
+  cite_authors = {\textbf{Kiendrebeogo}, Coughlin, Plestkova and Hoggard},
+  title = {{Observing Scenarios Simulations for the HLVK Configuration for O4 Using 20 Million Injections}},
+  year = {2024},
+  doi = {10.5281/zenodo.12693653},
+  url = {https://doi.org/10.5281/zenodo.12693653},
+  publisher = {Zenodo},
+  publication_type = {technical_report},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Year not given in CV; confirmed 2024 from the Zenodo record.}
+}
+
+@article{lvk2024_compact_object_neutron_star,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{Observation of Gravitational Waves from the Coalescence of a 2.5--4.5 $M_\odot$ Compact Object and a Neutron Star}},
+  journal = {The Astrophysical Journal Letters},
+  year = {2024},
+  volume = {970},
+  pages = {L34},
+  doi = {10.3847/2041-8213/ad5beb},
+  url = {https://doi.org/10.3847/2041-8213/ad5beb},
+  publication_type = {collaboration},
+  order = {29}
+}
+
+@article{lvk2024_geo600_frb,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{A Search Using GEO600 for Gravitational Waves Coincident with Fast Radio Bursts from SGR 1935+2154}},
+  journal = {The Astrophysical Journal},
+  year = {2024},
+  volume = {977},
+  pages = {255},
+  doi = {10.3847/1538-4357/ad8de0},
+  url = {https://doi.org/10.3847/1538-4357/ad8de0},
+  publication_type = {collaboration},
+  order = {31}
+}
+
+@article{lvk2024_kagra_dark_matter,
+  author = {{LIGO Scientific Collaboration} and {Virgo Collaboration} and {KAGRA Collaboration}},
+  cite_authors = {LIGO Scientific, Virgo and KAGRA Collaborations},
+  title = {{Ultralight Vector Dark Matter Search Using Data from the KAGRA O3GK Run}},
+  journal = {Physical Review D},
+  year = {2024},
+  volume = {110},
+  eid = {042001},
+  doi = {10.1103/PhysRevD.110.042001},
+  url = {https://doi.org/10.1103/PhysRevD.110.042001},
+  publication_type = {collaboration},
+  order = {30}
+}
+
+@article{tostaemelo2024_grandma_swift,
+  author = {I. Tosta e Melo and J.-G. Ducoin and Z. Vidadi and C. Andrade and V. Rupchandani and S. Agayeva and J. Abdelhadi and L. Abe and O. Aguerre-Chariol and V. Aivazyan and S. Alishov and S. Antier and J.-M. Bai and A. Baransky and S. Bednarz and Ph. Bendjoya and Z. Benkhaldoun and S. Beradze and M. A. Bizouard and U. Bhardwaj and M. Blazek and M. Bo\"er and E. Broens and O. Burkhonov and N. Christensen and J. Cooke and W. Corradi and M. W. Coughlin and T. Culino and F. Daigne and D. Dornic and P.-A. Duverne and S. Ehgamberdiev and L. Eymar and A. Fouad and M. Freeberg and B. Gendre and F. Guo and P. Gokuldass and N. Guessoum and E. Gurbanov and R. Hainich and E. Hasanov and P. Hello and R. Inasaridze and A. Iskandar and N. Ismailov and A. Janati and T. Jegou du Laz and D. A. Kann and S. Karpov and R. W. Kiendrebeogo and A. Klotz and R. Kneip and N. Kochiashvili and A. Kaeouach and K. Kruiswijk and M. Lamoureux and N. Leroy and W. L. Lin and J. Mao and D. Marchais and M. Ma\v{s}ek and T. Midavaine and A. Moller and D. Morris and R. Natsvlishvili and F. Navarete and A. Nicuesa Guelbenzu and K. Noonan and K. Noysena and A. Oksanen and N. B. Orange and C. Pellouin and J. Peloton and H. W. Peng and M. Pilloix and A. Popowicz and T. Pradier and O. Pyshna and G. Raaijmakers and Y. Rajabov and A. Rau and C. Rinner and J.-P. Rivet and A. S. Ryh and M. Sabil and T. Sadibekova and N. Sasaki and M. Serrau and A. Simon and A. Shokry and K. Smith and O. Sokoliuk and X. Song and A. Takey and P. Thierry and Y. Tillayev and D. Turpin and A. de Ugarte Postigo and V. Vasylenko and D. Vernet and L. Wang and F. Vachier and J. P. Vignes and X. F. Wang and X. Zeng and J. Zhang and Y. Zhu},
+  cite_authors = {Tosta e Melo, \ldots, \textbf{Kiendrebeogo}, \ldots\ et al.},
+  title = {{Ready for O4 II: GRANDMA Observations of Swift GRBs over Eight Weeks in Spring 2022}},
+  journal = {Astronomy \& Astrophysics},
+  year = {2024},
+  volume = {682},
+  pages = {A141},
+  doi = {10.1051/0004-6361/202347938},
+  url = {https://doi.org/10.1051/0004-6361/202347938},
+  publication_type = {refereed},
+  order = {10},
+  highlight = {R. W. Kiendrebeogo},
+  note = {CV listed the page id as A14; the registered CrossRef record gives A141 — using the authoritative record.}
+}
+
+@article{coughlin2023_data_science_platform,
+  author = {Michael W. Coughlin and Joshua S. Bloom and Guy Nir and Sarah Antier and Theophile Jegou du Laz and St\'efan van der Walt and Arien Crellin-Quick and Thomas Culino and Dmitry A. Duev and Daniel A. Goldstein and Brian F. Healy and Viraj Karambelkar and Jada Lilleboe and Kyung Min Shin and Leo P. Singer and Tom\'as Ahumada and Shreya Anand and Eric C. Bellm and Richard Dekany and Matthew J. Graham and Mansi M. Kasliwal and Ivona Kostadinova and R. Weizmann Kiendrebeogo and Shrinivas R. Kulkarni and Sydney Jenkins and Natalie LeBaron and Ashish A. Mahabal and James D. Neill and B. Parazin and Julien Peloton and Daniel A. Perley and Reed Riddle and Ben Rusholme and Jakob van Santen and Jesper Sollerman and Robert Stein and D. Turpin and Avery Wold and Carla Amat and Adrien Bonnefon and Adrien Bonnefoy and Manon Flament and Frank Kerkow and Sulekha Kishore and Shloke Jani and Stephen K. Mahanty and C\'eline Liu and Laura Llinares and Jolyane Makarison and Alix Olli\'eric and In\`es Perez and Lydie Pont and Vyom Sharma},
+  cite_authors = {Coughlin, \ldots, \textbf{Kiendrebeogo}, \ldots\ et al.},
+  title = {{A Data Science Platform to Enable Time-Domain Astronomy}},
+  journal = {The Astrophysical Journal Supplement Series},
+  year = {2023},
+  volume = {267},
+  number = {2},
+  pages = {31},
+  doi = {10.3847/1538-4365/acdee1},
+  url = {https://doi.org/10.3847/1538-4365/acdee1},
+  publication_type = {refereed},
+  order = {14},
+  featured = {true},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@article{kann2023_grb221009a,
+  author = {D. A. Kann and S. Agayeva and V. Aivazyan and S. Alishov and C. M. Andrade and S. Antier and A. Baransky and P. Bendjoya and Z. Benkhaldoun and S. Beradze and D. Berezin and M. Bo\"er and E. Broens and S. Brunier and M. Bulla and O. Burkhonov and E. Burns and Y. Chen and Y. P. Chen and M. Conti and M. W. Coughlin and W. W. Cui and F. Daigne and B. Delaveau and H. A. R. Devillepoix and T. Dietrich and D. Dornic and F. Dubois and J.-G. Ducoin and E. Durand and P.-A. Duverne and H.-B. Eggenstein and S. Ehgamberdiev and A. Fouad and M. Freeberg and D. Froebrich and M. Y. Ge and S. Gervasoni and V. Godunova and P. Gokuldass and E. Gurbanov and D. W. Han and E. Hasanov and P. Hello and T. Hussenot-Desenonges and R. Inasaridze and A. Iskandar and N. Ismailov and A. Janati and T. Jegou du Laz and S. M. Jia and S. Karpov and A. Kaeouach and R. W. Kiendrebeogo and A. Klotz and R. Kneip and N. Kochiashvili and N. Kunert and A. Lekic and S. Leonini and C. K. Li and W. Li and X. B. Li and J. Y. Liao and L. Logie and F. J. Lu and J. Mao and D. Marchais and R. M\'enard and D. Morris and R. Natsvlishvili and V. Nedora and K. Noonan and K. Noysena and N. B. Orange and P. T. H. Pang and H. W. Peng and C. Pellouin and J. Peloton and T. Pradier and O. Pyshna and Y. Rajabov and S. Rau and C. Rinner and J.-P. Rivet and F. D. Romanov and P. Rosi and V. A. Rupchandani and M. Serrau and A. Shokry and A. Simon and K. Smith and O. Sokoliuk and M. Soliman and L. M. Song and A. Takey and Y. Tillayev and L. M. Tinjaca Ramirez and I. Tosta e Melo and D. Turpin and A. de Ugarte Postigo and S. Vanaverbeke and V. Vasylenko and D. Vernet and Z. Vidadi and C. Wang and J. Wang and L. T. Wang and X. F. Wang and S. L. Xiong and Y. P. Xu and W. C. Xue and X. Zeng and S. N. Zhang and H. S. Zhao and X. F. Zhao},
+  cite_authors = {Kann, \ldots, \textbf{Kiendrebeogo}, \ldots\ et al.},
+  title = {{GRANDMA and HXMT Observations of GRB 221009A: The Standard Luminosity Afterglow of a Hyperluminous Gamma-Ray Burst}},
+  journal = {The Astrophysical Journal Letters},
+  year = {2023},
+  volume = {948},
+  number = {2},
+  pages = {L12},
+  doi = {10.3847/2041-8213/acc8d0},
+  url = {https://doi.org/10.3847/2041-8213/acc8d0},
+  publication_type = {refereed},
+  order = {16},
+  highlight = {R. W. Kiendrebeogo}
+}
+
+@misc{kiendrebeogo2023_o4_statistical_predictions,
+  author = {R. Weizmann Kiendrebeogo and Andrew Toivonen and Michael Coughlin and John Dent},
+  cite_authors = {\textbf{Kiendrebeogo}, Toivonen, Coughlin and Dent},
+  title = {{O4 Statistical Predictions with the PDB/GWTC-3 Distribution for HL and HLV}},
+  year = {2023},
+  url = {https://dcc.ligo.org/T2300385},
+  howpublished = {LIGO Document T2300385},
+  publication_type = {technical_report},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Year not given in CV; the document lives behind LIGO-internal SSO so it could not be fetched directly — 2023 inferred from the standard "T23nnnnn" LIGO DCC numbering convention (confirmed against T2500311 = 2025). Please double-check.}
+}
+
+@article{kiendrebeogo2023_observing_scenarios,
+  author = {R. Weizmann Kiendrebeogo and Amanda M. Farah and Emily M. Foley and Abigail Gray and Nina Kunert and Anna Puecher and Andrew Toivonen and R. Oliver VandenBerg and Shreya Anand and Tom\'as Ahumada and Viraj Karambelkar and Michael W. Coughlin and Tim Dietrich and S. Zacharie Kam and Peter T. H. Pang and Leo P. Singer and Niharika Sravan},
+  cite_authors = {\textbf{Kiendrebeogo} et al.},
+  title = {{Updated Observing Scenarios and Multimessenger Implications for the International Gravitational-wave Networks O4 and O5}},
+  journal = {The Astrophysical Journal},
+  year = {2023},
+  volume = {958},
+  number = {2},
+  pages = {158},
+  doi = {10.3847/1538-4357/acfcb1},
+  url = {https://doi.org/10.3847/1538-4357/acfcb1},
+  publication_type = {refereed},
+  order = {12},
+  featured = {true},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@misc{kiendrebeogo2023_simulated_detection_o4a,
+  author = {R. Weizmann Kiendrebeogo and Michael Coughlin and Amanda Farah and Emily Foley and Abigail Gray and Leo Singer},
+  cite_authors = {\textbf{Kiendrebeogo}, Coughlin, Farah, Foley, Gray and Singer},
+  title = {{Simulated Detection and Localization in LIGO's HL Configuration for O4a and HLVK for O4b and O5}},
+  year = {2023},
+  doi = {10.5281/zenodo.10078926},
+  url = {https://zenodo.org/records/10078926},
+  publisher = {Zenodo},
+  publication_type = {technical_report},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Year not given in CV; confirmed 2023 from the Zenodo record.}
+}
+
+@article{kunert2023_grb211211a,
+  author = {Nina Kunert and Sarah Antier and Vsevolod Nedora and Mattia Bulla and Peter T. H. Pang and Shreya Anand and Michael Coughlin and Ingo Tews and Jennifer Barnes and Tom Hussenot-Desenonges and Brian Healy and Theophile Jegou du Laz and Marion Pilloix and Weizmann Kiendrebeogo and Tim Dietrich},
+  cite_authors = {Kunert, Antier, Nedora, Bulla, Pang, Anand, Coughlin, Tews, Barnes, Hussenot-Desenonges, Healy, Jegou du Laz, Pilloix, \textbf{Kiendrebeogo} and Dietrich},
+  title = {{Bayesian Model Selection for GRB 211211A through Multiwavelength Analyses}},
+  journal = {Monthly Notices of the Royal Astronomical Society},
+  year = {2023},
+  volume = {527},
+  number = {2},
+  pages = {3900--3911},
+  doi = {10.1093/mnras/stad3463},
+  url = {https://doi.org/10.1093/mnras/stad3463},
+  publication_type = {refereed},
+  order = {15},
+  featured = {true},
+  highlight = {Weizmann Kiendrebeogo}
+}
+
+@article{pang2023_nuclear_physics_framework,
+  author = {Peter T. H. Pang and Tim Dietrich and Michael W. Coughlin and Mattia Bulla and Ingo Tews and Mouza Almualla and Tyler Barna and R. Weizmann Kiendrebeogo and Nina Kunert and Gargi Mansingh and Brandon Reed and Niharika Sravan and Andrew Toivonen and Sarah Antier and Robert O. VandenBerg and Jack Heinzel and Vsevolod Nedora and Pouyan Salehi and Ritwik Sharma and Rahul Somasundaram and Chris Van Den Broeck},
+  cite_authors = {Pang, Dietrich, Coughlin, Bulla, Tews, Almualla, Barna, \textbf{Kiendrebeogo}, Kunert, Mansingh, Reed, Sravan, Toivonen, Antier, Vanden Berg, Heinzel, Nedora, Salehi, Sharma, Somasundaram and Van Den Broeck},
+  title = {{An Updated Nuclear-Physics and Multi-Messenger Astrophysics Framework for Binary Neutron Star Mergers}},
+  journal = {Nature Communications},
+  year = {2023},
+  volume = {14},
+  number = {1},
+  eid = {8352},
+  doi = {10.1038/s41467-023-43932-6},
+  url = {https://doi.org/10.1038/s41467-023-43932-6},
+  publication_type = {refereed},
+  order = {13},
+  featured = {true},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@inproceedings{agayeva2022_grandma_network,
+  author = {S. Agayeva and V. Aivazyan and S. Alishov and M. Almualla and C. Andrade and Sarah Antier and J. M. Bai and A. Baransky and S. Basa and P. Bendjoya and Z. Benkhaldoun and S. Beradze and D. Berezin and U. Bhardwaj and M. Blazek and O. Burkhonov and E. Burns and S. Caudill and N. Christensen and F. Colas and A. Coleiro and W. Corradi and M. W. Coughlin and T. Culino and D. Darson and D. Datashvili and G. de Wasseige and T. Dietrich and F. Dolon and D. Dornic and J. Dubouil and J.-G. Ducoin and P.-A. Duverne and A. Esamdin and A. Fouad and F. Guo and V. Godunova and P. Gokuldass and N. Guessoum and E. Gurbanov and R. Hainich and E. Hasanov and P. Hello and T. Hussenot-Desenonges and R. Inasaridze and A. Iskandar and E. E. O. Ishida and N. Ismailov and T. Jegou du Laz and D. A. Kann and G. Kapanadze and S. Karpov and R. W. Kiendrebeogo and A. Klotz and N. Kochiashvili and A. Kaeouach and J.-P. Kneib and W. Kou and K. Kruiswijk and S. Lombardo and M. Lamoureux and N. Leroy and A. Le Van Su and J. Mao and M. Masek and T. Midavaine and A. Moeller and D. Morris and R. Natsvlishvili and F. Navarete and S. Nissanke and K. Noonan and K. Noysena and N. B. Orange and J. Peloton and M. Pilloix and T. Pradier and M. Prouza and G. Raaijmakers and Y. Rajabov and J.-P. Rivet and Y. Romanyuk and L. Rousselot and F. Ruenger and V. Rupchandani and T. Sadibekova and N. Sasaki and A. Simon and K. Smith and O. Sokoliuk and X. Song and A. Takey and Y. Tillayev and I. Tosta e Melo and D. Turpin and A. de Ugarte Postigo and M. Vardosanidze and X. F. Wang and D. Vernet and Z. Vidadi and J. Zhu and Y. Zhu},
+  cite_authors = {Agayeva et al.},
+  title = {{The GRANDMA Network in Preparation for the Fourth Gravitational-wave Observing Run}},
+  booktitle = {Observatory Operations: Strategies, Processes, and Systems IX},
+  year = {2022},
+  volume = {12186},
+  pages = {121861H},
+  doi = {10.1117/12.2630240},
+  url = {https://doi.org/10.1117/12.2630240},
+  publication_type = {collaboration},
+  order = {32},
+  highlight = {R. W. Kiendrebeogo},
+  note = {Reused verbatim from own-website/references.bib (CrossRef record).}
+}
+
+@article{aivazyan2022_grandma_ztf_fink,
+  author = {V. Aivazyan and M. Almualla and S. Antier and A. Baransky and K. Barynova and S. Basa and F. Bayard and S. Beradze and D. Berezin and M. Blazek and D. Boutigny and D. Boust and E. Broens and O. Burkhonov and A. Cailleau and N. Christensen and D. Cejudo and A. Coleiro and M. W. Coughlin and D. Datashvili and T. Dietrich and F. Dolon and J.-G. Ducoin and P.-A. Duverne and G. Marchal-Duval and C. Galdies and L. Granier and V. Godunova and P. Gokuldass and H. B. Eggenstein and M. Freeberg and P. Hello and R. Inasaridze and E. E. O. Ishida and P. Jaquiery and D. A. Kann and G. Kapanadze and S. Karpov and R. W. Kiendrebeogo and A. Klotz and R. Kneip and N. Kochiashvili and W. Kou and F. Kugel and C. Lachaud and S. Leonini and A. Leroy and N. Leroy and A. Le Van Su and D. Marchais and M. Ma\v{s}ek and T. Midavaine and A. M\"oller and D. Morris and R. Natsvlishvili and F. Navarete and K. Noysena and S. Nissanke and K. Noonan and N. B. Orange and J. Peloton and A. Popowicz and T. Pradier and M. Prouza and G. Raaijmakers and Y. Rajabov and M. Richmond and Ya. Romanyuk and L. Rousselot and T. Sadibekova and M. Serrau and O. Sokoliuk and X. Song and A. Simon and C. Stachie and A. Taylor and Y. Tillayev and D. Turpin and M. Vardosanidze and J. Vlieghe and I. Tosta e Melo and X. F. Wang and J. Zhu},
+  cite_authors = {Aivazyan, \ldots, \textbf{Kiendrebeogo}, \ldots\ et al.},
+  title = {{GRANDMA Observations of ZTF/Fink Transients during Summer 2021}},
+  journal = {Monthly Notices of the Royal Astronomical Society},
+  year = {2022},
+  volume = {515},
+  number = {4},
+  pages = {6007--6022},
+  doi = {10.1093/mnras/stac2054},
+  url = {https://doi.org/10.1093/mnras/stac2054},
+  publication_type = {refereed},
+  order = {17},
+  highlight = {R. W. Kiendrebeogo}
+}
+
+@misc{andrade2022_grb220325a_gcn,
+  author = {C. Andrade and Michael Coughlin and K. Noysena and R. Weizmann Kiendrebeogo and others},
+  cite_authors = {Andrade, Coughlin, Noysena, \textbf{Kiendrebeogo} et al.},
+  title = {{GRB 220325A: GRANDMA Observations}},
+  year = {2022},
+  howpublished = {GCN Circular 31804},
+  publication_type = {technical_report},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo}
+}
+
+@misc{coughlin2022_observing_capabilities_zenodo,
+  author = {Michael Coughlin and Amanda Farah and Emily Foley and Abigail Gray and Leo Singer and R. Weizmann Kiendrebeogo},
+  cite_authors = {Coughlin, Farah, Foley, Gray, Singer and \textbf{Kiendrebeogo}},
+  title = {{LIGO/Virgo/KAGRA Observing Capabilities: Simulated Detections and Localization for O4 and O5}},
+  year = {2022},
+  doi = {10.5281/zenodo.7026209},
+  url = {https://doi.org/10.5281/zenodo.7026209},
+  publisher = {Zenodo},
+  publication_type = {technical_report},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Year not given in CV; confirmed 2022 from the Zenodo record.}
+}
+
+@misc{kiendrebeogo_observing_capabilities,
+  author = {R. Weizmann Kiendrebeogo and Leo Singer and Michael Coughlin},
+  cite_authors = {\textbf{Kiendrebeogo}, Singer and Coughlin},
+  title = {{Observing Capabilities}},
+  url = {https://emfollow.docs.ligo.org/userguide/capabilities.html},
+  howpublished = {LIGO/Virgo/KAGRA Public Alerts User Guide},
+  publication_type = {technical_report},
+  keywords = {manual},
+  highlight = {R. Weizmann Kiendrebeogo},
+  note = {Continuously-updated living document; no fixed publication year given in the CV — left unset rather than invented.}
+}

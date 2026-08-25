@@ -1,0 +1,39 @@
+{{/*
+  Local override of blox's has_attachments.html.
+
+  Upstream bug: this check tests the deprecated `.Params.doi` /
+  `.Params.links` fields but not the modern `hugoblox.ids` field
+  (`hugoblox: {ids: {doi, arxiv, ...}}`) that build_links.html itself
+  recommends and reads. Pages using only `hugoblox.ids` (our
+  scripts/import_publications.py output) were showing no DOI/preprint
+  link buttons. Safe to delete once upstream HugoBlox/kit fixes this in
+  blox/layouts/_partials/functions/has_attachments.html.
+*/}}
+
+{{ $page := . }}
+
+{{ $pdf_link := false }}
+{{ with $page.File }}
+  {{ $slug := $page.File.ContentBaseName }}
+  {{ $resource := $page.Resources.GetMatch (printf "%s.pdf" $slug) }}
+  {{ with $resource }}
+    {{ $pdf_link = true }}
+  {{ end }}
+{{ end }}
+
+{{ $cite_link := false }}
+{{ $resource := $page.Resources.GetMatch "cite.bib" }}
+{{ with $resource }}
+  {{ $cite_link = true }}
+{{ end }}
+
+{{ $has_ids := false }}
+{{ with $page.Params.hugoblox }}
+  {{ with .ids }}
+    {{ if gt (len .) 0 }}
+      {{ $has_ids = true }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return ($cite_link | or $pdf_link | or $has_ids | or .Params.url_preprint | or .Params.url_pdf | or .Params.url_slides | or .Params.url_video | or .Params.url_source | or .Params.url_code | or .Params.url_dataset | or .Params.url_poster | or .Params.url_project | or .Params.doi | or .Params.links | or .Params.projects | or .Params.slides) }}

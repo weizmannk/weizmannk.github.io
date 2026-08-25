@@ -1,0 +1,12 @@
+- id: pub_refereed
+  translation: Refereed
+- id: pub_submitted
+  translation: Submitted
+- id: pub_in_preparation
+  translation: In Preparation
+- id: pub_proceedings
+  translation: Conference Proceedings
+- id: pub_collaboration
+  translation: Collaboration
+- id: pub_technical_report
+  translation: Technical Report

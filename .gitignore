@@ -1,0 +1,44 @@
+# IDEs
+.idea/
+
+# Hugo
+resources/
+public/
+jsconfig.json
+**/assets/jsconfig.json
+go.sum
+.hugo_build.lock
+hugo_stats.json
+
+# CV build scratch (scripts/build_cv.py output; final PDFs land in static/uploads/)
+cv/build/
+
+# Empty placeholder — no custom icons added (using theme's built-in icon pack)
+assets/media/icons/custom/
+
+# Node.js & package managers
+node_modules/
+
+# Pagefind search index
+pagefind/
+static/pagefind/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+
+CLAUDE.md
