@@ -17,7 +17,7 @@ Prérequis : [Hugo extended](https://gohugo.io/installation/) et Node (pour les 
 front-end du thème).
 
 ```bash
-npm install                # une seule fois, installe les dépendances du thème
+pnpm install                # une seule fois, installe les dépendances du thème
 hugo server -D             # démarre le serveur local avec les brouillons (-D)
 ```
 
