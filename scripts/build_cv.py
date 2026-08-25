@@ -43,7 +43,7 @@ OUTPUT_NAMES = {"full": "CV_Kiendrebeogo.pdf", "short": "CV_Kiendrebeogo_short.p
 
 # Only these identity links go in the CV PDF header, matching main_CV.tex —
 # e.g. LinkedIn is website-only, deliberately excluded here (see data/cv.yml).
-CV_HEADER_LINK_ORDER = ["github", "orcid", "google_scholar"]
+CV_HEADER_LINK_ORDER = ["website", "github", "orcid", "google_scholar"]
 
 PUBLICATION_SECTIONS = ["submitted", "refereed", "proceedings", "collaboration", "technical_report"]
 
@@ -258,7 +258,10 @@ def build_header(identity: dict) -> dict:
         url = links.get(key)
         if not url:
             continue
-        if key == "github":
+        if key == "website":
+            label = url.replace("https://", "").rstrip("/")
+            link_parts.append(f"\\href{{{url}}}{{{label}}}")
+        elif key == "github":
             label = url.replace("https://", "")
             link_parts.append(f"\\href{{{url}}}{{{label}}}")
         elif key == "orcid":

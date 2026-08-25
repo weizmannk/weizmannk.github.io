@@ -31,6 +31,7 @@ identity:
   # google_scholar in the PDF header, matching main_CV.tex — linkedin is
   # website-only, not wanted in the CV PDF.
   links:
+    website: https://weizmannk.github.io/
     github: https://github.com/weizmannk
     orcid: https://orcid.org/0000-0002-9108-5059
     google_scholar: https://scholar.google.com/citations?user=BtijpuEAAAAJ

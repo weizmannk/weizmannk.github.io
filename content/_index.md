@@ -42,8 +42,7 @@ sections:
           - publications
         featured_only: true
     design:
-      view: article-grid
-      columns: 2
+      view: citation
   - block: collection
     id: talks
     content:
