@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12026'
 abstract: The angular distribution of gravitational-wave power from persistent sources
   may exhibit anisotropies arising from the large-scale structure of the Universe.
   This motivates directional searches for astrophysical and cosmological gravitational-wave

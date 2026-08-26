@@ -9,6 +9,7 @@ sections:
     content:
       title: Refereed Publications — Lead & Core-Team Contributions
       count: 0
+      sort_by: sort_key
       filters:
         folders:
           - publications

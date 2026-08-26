@@ -14,6 +14,7 @@ publication_years:
 featured: false
 tags:
 - core-team
+sort_key: '12025'
 abstract: In the era of real-time astronomy, citizen scientists play an increasingly
   important role in the discovery and follow-up of transient astrophysical phenomena.
   From local astronomical societies to global initiatives, amateur astronomers contribute

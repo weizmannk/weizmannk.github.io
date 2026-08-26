@@ -10,6 +10,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12025'
 abstract: On 2023 November 23, the two LIGO observatories both detected GW231123,
   a gravitational-wave signal consistent with the merger of two black holes with masses
   137-18+23M☉ and 101-50+22M☉ (90% credible intervals), at a luminosity distance of

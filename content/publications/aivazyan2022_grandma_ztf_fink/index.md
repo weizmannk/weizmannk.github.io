@@ -92,6 +92,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12022'
 abstract: We present our follow-up observations with GRANDMA of transient sources
   revealed by the Zwicky Transient Facility (ZTF). Over a period of six months, all
   ZTF alerts were examined in real time by a dedicated science module implemented

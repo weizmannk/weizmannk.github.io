@@ -14,6 +14,7 @@ publication_years:
 featured: true
 tags:
 - core-team
+sort_key: '12025'
 abstract: The rise of direct detection of gravitational waves (GWs) started a new
   era in multi-messenger astrophysics. Like GWs, many other astrophysical transient
   sources suffer from poor localization, which can span tens to thousands of square

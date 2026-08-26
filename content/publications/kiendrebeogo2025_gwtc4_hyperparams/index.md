@@ -15,6 +15,7 @@ publication_years:
 featured: false
 tags:
 - core-team
+sort_key: '22025'
 abstract: This document provides the maximum-posterior hyperparameters for the Broken
   Power Law + 2 Peak (BP2P) population model, inferred from the GWTC-4 catalog
 links:

@@ -43,6 +43,8 @@ DEFAULT_OUTPUT_DIR = ROOT / "content" / "publications"
 # network papers (>=52 authors).
 CORE_TEAM_MAX_AUTHORS = 25
 
+SURNAME_VARIANTS = ("Kiendrebeogo", "Kiendrébéogo", "Kiendrebéogo")
+
 # bibliography/publications.bib publication_type -> Hugo taxonomy term.
 # Hyphenated (not underscored) so the theme's Title-case display fallback
 # reads "In-Preparation" / "Technical-Report" rather than showing a raw "_".
@@ -141,8 +143,17 @@ def build_front_matter(entry: dict) -> dict:
     # papers (52+ authors here) where individual contribution isn't visible in
     # a byline. Used only to split the website's Refereed Publications section;
     # doesn't affect publication_type or the CV.
-    raw_author_count = len(entry.get("author", "").split(" and ")) if entry.get("author") else 0
+    raw_authors = entry.get("author", "").split(" and ") if entry.get("author") else []
+    raw_author_count = len(raw_authors)
     team_tags = ["core-team"] if raw_author_count <= CORE_TEAM_MAX_AUTHORS else ["large-team"]
+
+    # Lead-authored papers sort first within a section regardless of date.
+    # "2"/"1" (not "1"/"0") so descending string sort ranks first-author work
+    # above everything else, then newest-first within each tier.
+    is_first_author = bool(raw_authors) and any(
+        v in raw_authors[0] for v in SURNAME_VARIANTS
+    )
+    sort_key = ("2" if is_first_author else "1") + (str(year) if year else "0")
 
     fm = {
         "title": clean(entry.get("title", "")),
@@ -152,6 +163,7 @@ def build_front_matter(entry: dict) -> dict:
         "publication_years": [str(year)] if year else [],
         "featured": str(entry.get("featured", "")).lower() == "true",
         "tags": team_tags,
+        "sort_key": sort_key,
         "abstract": clean(entry.get("abstract", "")),
     }
 

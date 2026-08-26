@@ -24,6 +24,7 @@ publication_years:
 featured: true
 tags:
 - core-team
+sort_key: '12024'
 abstract: 'Although GRB 211211A is one of the closest gamma-ray bursts (GRBs), its
   classification is challenging because of its partially inconclusive electromagnetic
   signatures. In this paper, we investigate four astrophysical scenarios as possible

@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12026'
 abstract: GW230814, detected by the LIGO Livingston observatory with a signal-to-
   noise ratio of 42.4, represents the loudest gravitational-wave signal in the GWTC-4.0
   catalog. Its source is consistent with a binary black hole coalescence with component

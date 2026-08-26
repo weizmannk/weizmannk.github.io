@@ -10,6 +10,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12026'
 abstract: The Gravitational-Wave Transient Catalog (GWTC) is a collection of candidate
   gravitational-wave transient signals identified and characterized by the LIGO–Virgo–KAGRA
   Collaboration. Producing the contents of the GWTC from detector data requires complex

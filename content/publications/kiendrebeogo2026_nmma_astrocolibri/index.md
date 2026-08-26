@@ -12,6 +12,7 @@ publication_years:
 featured: true
 tags:
 - core-team
+sort_key: '22026'
 abstract: The surge in publicly available photometric alerts from wide-field surveys
   requires automated tools for real-time transient classification. We present NMMA–Astro-COLIBRI,
   an on-demand Bayesian classification service that couples the Nuclear-physics and

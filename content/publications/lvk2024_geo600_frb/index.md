@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12024'
 abstract: The magnetar SGR 1935+2154 is the only known Galactic source of fast radio
   bursts (FRBs). FRBs from SGR 1935+2154 were first detected by the Canadian Hydrogen
   Intensity Mapping Experiment (CHIME)/FRB and the Survey for Transient Astronomical

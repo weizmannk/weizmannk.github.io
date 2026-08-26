@@ -10,6 +10,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12025'
 abstract: We present the results of a search for gravitational-wave transients associated
   with core-collapse supernova SN 2023ixf, which was observed in the galaxy Messier
   101 via optical emission on 2023 May 19, during the LIGO–Virgo–KAGRA 15th Engineering

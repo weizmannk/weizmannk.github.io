@@ -52,6 +52,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12022'
 abstract: 'The GRANDMA telescope network responded to the Swift-BAT alert of GRB 221110A
   (M. A. Williams et al., GCN 32925, P.A. Evans et al. GCN 32929) detected at 02:28:17.62
   UT. An afterglow was immediately detected by UVOT with the estimated magnitude of

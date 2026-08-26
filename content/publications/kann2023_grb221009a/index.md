@@ -126,6 +126,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12023'
 abstract: Object GRB 221009A is the brightest gamma-ray burst (GRB) detected in more
   than 50 yr of study. In this paper, we present observations in the X-ray and optical
   domains obtained by the GRANDMA Collaboration and the Insight Collaboration. We

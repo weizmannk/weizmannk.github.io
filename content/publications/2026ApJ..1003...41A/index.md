@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12026'
 abstract: The discovery of joint sources of high-energy neutrinos and gravitational
   waves has been a primary target for the LIGO, Virgo, KAGRA, and IceCube observatories.
   The joint detection of high-energy neutrinos and gravitational waves would provide

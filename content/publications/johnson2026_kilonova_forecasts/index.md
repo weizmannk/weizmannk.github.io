@@ -24,6 +24,7 @@ publication_years:
 featured: true
 tags:
 - core-team
+sort_key: '12026'
 abstract: The follow-up of gravitational-wave events by wide-field surveys is a crucial
   tool for the discovery of electromagnetic counterparts to gravitational wave sources,
   such as kilonovae. Machine learning tools can play an important role in aiding search

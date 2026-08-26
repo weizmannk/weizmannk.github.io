@@ -20,6 +20,7 @@ publication_years:
 featured: true
 tags:
 - core-team
+sort_key: '22025'
 abstract: This work presents the first demonstration of nonlinear noise regression
   in the Virgo detector using deep learning techniques. We use DeepClean, a convolutional
   autoencoder previously shown to be effective in denoising LIGO data, as our tool

@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - core-team
+sort_key: '12026'
 abstract: We present a new Astro-COLIBRI component that converts free-text GCN Circulars
   into structured, event-linked follow-up records and combines them with structured
   reports submitted directly by the community. A continuously running Circular listener

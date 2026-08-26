@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12025'
 abstract: Continuous gravitational waves (CWs) emission from neutron stars carries
   information about their internal structure and equation of state, and it can provide
   tests of general relativity. We present a search for CWs from a set of 45 known

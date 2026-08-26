@@ -10,6 +10,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12024'
 abstract: Among the various candidates for dark matter (DM), ultralight vector DM
   can be probed by laser interferometric gravitational wave detectors through the
   measurement of oscillating length changes in the arm cavities. In this context,

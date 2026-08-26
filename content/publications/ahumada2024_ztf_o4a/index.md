@@ -62,6 +62,7 @@ publication_years:
 featured: true
 tags:
 - large-team
+sort_key: '12024'
 abstract: During the first half of the fourth observing run (O4a) of the International
   Gravitational Wave Network, the Zwicky Transient Facility (ZTF) conducted a systematic
   search for kilonova (KN) counterparts to binary neutron star (BNS) and neutron star–black

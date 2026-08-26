@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12025'
 abstract: We report the observation of gravitational waves from two binary black hole
   coalescences during the fourth observing run of the LIGO–Virgo–KAGRA detector network,
   GW241011 and GW241110. The sources of these two signals are characterized by rapid

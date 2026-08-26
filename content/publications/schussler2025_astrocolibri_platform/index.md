@@ -14,6 +14,7 @@ publication_years:
 featured: false
 tags:
 - core-team
+sort_key: '12025'
 abstract: The detection of transient phenomena such as Gamma-Ray Bursts (GRBs), Fast
   Radio Bursts (FRBs), stellar flares, novae, and supernovae, alongside novel cosmic
   messengers like high-energy neutrinos and gravitational waves, has transformed astrophysics

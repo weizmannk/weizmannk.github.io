@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12026'
 abstract: We analyze data from 142 of the 218 gravitational-wave (GW) sources in the
   fourth LIGO–Virgo–KAGRA Collaboration (LVK) Gravitational- Wave Transient Catalog
   (GWTC-4.0) to estimate the Hubble constant H$_0$ jointly with the population properties

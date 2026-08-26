@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - core-team
+sort_key: '12025'
 hugoblox:
   ids:
     arxiv: '2508.18082'

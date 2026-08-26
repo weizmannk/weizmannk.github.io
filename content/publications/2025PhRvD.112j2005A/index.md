@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12025'
 abstract: We present a search for short-duration gravitational-wave transients in
   data from the first eight months of Advanced LIGO-Virgo-KAGRA's fourth observing
   run, denoted O4a. We use four analyses which are sensitive to a wide range of potential

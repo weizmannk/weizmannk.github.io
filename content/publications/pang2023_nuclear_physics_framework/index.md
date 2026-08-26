@@ -31,6 +31,7 @@ publication_years:
 featured: true
 tags:
 - core-team
+sort_key: '12023'
 abstract: The multi-messenger detection of the gravitational-wave signal GW170817,
   the corresponding kilonova AT2017gfo and the short gamma-ray burst GRB170817A, as
   well as the observed afterglow has delivered a scientific breakthrough. For an accurate

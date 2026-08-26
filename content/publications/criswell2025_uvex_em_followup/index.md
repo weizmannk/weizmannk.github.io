@@ -22,6 +22,7 @@ publication_years:
 featured: false
 tags:
 - core-team
+sort_key: '12025'
 abstract: The Ultraviolet Explorer (UVEX) is expected to fly in 2030 and will have
   the opportunity—and the rapid near/far-ultraviolet (UV) capabilities—to glean unprecedented
   insight into the bright UV emission present in kilonovae like that of AT 170817gfo,

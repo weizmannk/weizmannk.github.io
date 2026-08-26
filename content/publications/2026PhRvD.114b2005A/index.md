@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12026'
 abstract: We present a search for gravitational waves from inspiraling, planetary-
   mass ultracompact binaries using data from the first part of the fourth observing
   run of LIGO, Virgo, and KAGRA. Finding no evidence of such systems, we determine

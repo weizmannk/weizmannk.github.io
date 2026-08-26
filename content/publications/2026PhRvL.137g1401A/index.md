@@ -10,6 +10,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12026'
 abstract: GW240925 and GW250207 are two loud gravitational-wave signals from binary
   black hole coalescences observed with network signal-to- noise ratios ∼32 and ∼69,
   respectively, by the LIGO Hanford-LIGO Livingston-Virgo network. Gravitational-wave

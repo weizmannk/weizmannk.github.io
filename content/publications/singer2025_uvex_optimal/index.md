@@ -23,6 +23,7 @@ publication_years:
 featured: true
 tags:
 - core-team
+sort_key: '12025'
 abstract: The UltraViolet EXplorer (UVEX) is a wide-field ultraviolet space telescope
   selected as a NASA Medium-Class Explorer mission for launch in 2030. UVEX will undertake
   deep, cadenced surveys of the entire sky to probe low mass galaxies and explore

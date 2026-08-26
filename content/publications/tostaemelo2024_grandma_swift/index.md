@@ -119,6 +119,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12024'
 publication:
   name: Astronomy & Astrophysics
   volume: '682'

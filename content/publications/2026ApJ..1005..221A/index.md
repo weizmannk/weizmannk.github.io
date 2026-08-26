@@ -11,6 +11,7 @@ publication_years:
 featured: false
 tags:
 - large-team
+sort_key: '12026'
 abstract: Rotating nonaxisymmetric neutron stars (NSs) are promising sources for continuous
   gravitational waves (CWs). CWs may, if detected, inform us about the internal structure
   and equation of state of NSs. Here, we present a narrowband search for CWs from

@@ -14,6 +14,7 @@ publication_years:
 featured: false
 tags:
 - core-team
+sort_key: '22024'
 hugoblox:
   ids:
     doi: 10.5281/zenodo.12693653

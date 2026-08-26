@@ -13,6 +13,7 @@ publication_years:
 featured: false
 tags:
 - core-team
+sort_key: '22023'
 links:
 - type: site
   url: https://dcc.ligo.org/T2300385
