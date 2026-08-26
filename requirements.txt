@@ -1,4 +1,0 @@
-requests>=2.31
-bibtexparser>=1.4,<2
-PyYAML>=6.0
-Jinja2>=3.1

@@ -73,8 +73,17 @@ def delatex(text: str) -> str:
     t = text.strip()
     if t.startswith("{") and t.endswith("}"):
         t = t[1:-1]
+    # ADS abstracts are hard-wrapped at ~60 chars with literal newlines —
+    # collapse to a single paragraph of flowing text.
+    t = re.sub(r"\s*\n\s*", " ", t)
 
     t = t.replace(r"$M_\odot$", "M\u2609")
+    t = re.sub(r"\$[^$]*\\odot[^$]*\$", "\u2609", t)
+    # ADS abstracts (bibtexabs export) wrap math symbols in \ensuremath{...}
+    # without surrounding $...$, e.g. "137{\ensuremath{-}}18+23M{\ensuremath{\odot}}".
+    t = re.sub(r"\\ensuremath\{([^{}]*)\}", r"\1", t)
+    t = t.replace(r"\odot", "\u2609").replace(r"\sim", "\u223c").replace(r"\times", "\u00d7")
+    t = t.replace(r"\textemdash", "\u2014").replace(r"\textendash", "\u2013")
     t = re.sub(r"\\textbf\{([^{}]*)\}", r"\1", t)
     t = re.sub(r"\\emph\{([^{}]*)\}", r"\1", t)
     t = t.replace(r"\ldots", "\u2026")
@@ -86,6 +95,7 @@ def delatex(text: str) -> str:
     )
     t = t.replace(r"\&", "&").replace(r"\%", "%").replace(r"\_", "_").replace(r"\#", "#")
     t = t.replace("--", "\u2013")
+    t = t.replace("\u2500", "\u2013")  # ADS box-drawing dash used as a range dash
     t = re.sub(r"\{([^{}]*)\}", r"\1", t)  # any remaining protective braces
     return t.strip()
 
@@ -94,7 +104,7 @@ def split_authors(author_field: str) -> list[str]:
     if not author_field:
         return []
     parts = re.split(r"\s+and\s+", author_field)
-    return [delatex(p.strip(" {}")) for p in parts if p.strip()]
+    return [delatex(p.strip()) for p in parts if p.strip()]
 
 
 def clean(text: str) -> str:
@@ -111,14 +121,23 @@ def build_front_matter(entry: dict) -> dict:
     hugo_type = PUB_TYPE_TO_HUGO.get(pub_type, pub_type.replace("_", "-"))
     year = entry.get("year", "")
 
+    # Collaboration papers (LVK, GRANDMA, ...) can list hundreds of authors in
+    # the raw .bib `author` field. The site shows the curated `cite_authors`
+    # byline instead in that case, matching how these are normally cited.
+    if pub_type == "collaboration" and entry.get("cite_authors"):
+        authors = [clean(entry["cite_authors"])]
+    else:
+        authors = split_authors(entry.get("author", ""))
+
     fm = {
         "title": clean(entry.get("title", "")),
-        "authors": split_authors(entry.get("author", "")),
+        "authors": authors,
         "date": f"{year}-01-01T00:00:00Z" if year else None,
         "publication_types": [hugo_type],
         "publication_years": [str(year)] if year else [],
         "featured": str(entry.get("featured", "")).lower() == "true",
         "tags": [],
+        "abstract": clean(entry.get("abstract", "")),
     }
 
     venue_name = clean(entry.get("journal") or entry.get("booktitle") or "")

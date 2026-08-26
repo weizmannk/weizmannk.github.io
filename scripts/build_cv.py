@@ -67,6 +67,7 @@ _LATEX_SPECIAL_CHARS = {
     "}": r"\}",
     "~": r"\textasciitilde{}",
     "^": r"\textasciicircum{}",
+    "─": "--",  # ADS sometimes uses a box-drawing dash (U+2500) as a range dash
 }
 
 

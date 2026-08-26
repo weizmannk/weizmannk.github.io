@@ -29,9 +29,13 @@ Pour arrêter le serveur : `Ctrl+C` dans le terminal où il tourne, ou
 
 ## Régénérer le CV et les publications
 
+Les scripts Python utilisent [uv](https://docs.astral.sh/uv/) pour gérer l'environnement et
+les dépendances (`pyproject.toml` / `uv.lock`) :
+
 ```bash
-python scripts/fetch_publications.py    # met à jour publications.bib depuis ADS + ORCID
-python scripts/build_cv.py --variant full   # génère static/uploads/CV_Kiendrebeogo.pdf
+ADS_TOKEN=xxxxx uv run python scripts/fetch_publications.py   # met à jour publications.bib depuis ADS + ORCID
+uv run python scripts/import_publications.py                  # régénère content/publications/ depuis le .bib
+uv run python scripts/build_cv.py --variant full               # génère static/uploads/CV_Kiendrebeogo.pdf
 ```
 
 `ADS_TOKEN` doit être défini dans l'environnement pour `fetch_publications.py`. La génération

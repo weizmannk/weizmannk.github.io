@@ -1,115 +1,31 @@
 ---
-title: The GRANDMA Network in Preparation for the Fourth Gravitational-wave Observing
-  Run
+title: The GRANDMA network in preparation for the fourth gravitational-wave observing
+  run
 authors:
-- S. Agayeva
-- V. Aivazyan
-- S. Alishov
-- M. Almualla
-- C. Andrade
-- Sarah Antier
-- J. M. Bai
-- A. Baransky
-- S. Basa
-- P. Bendjoya
-- Z. Benkhaldoun
-- S. Beradze
-- D. Berezin
-- U. Bhardwaj
-- M. Blazek
-- O. Burkhonov
-- E. Burns
-- S. Caudill
-- N. Christensen
-- F. Colas
-- A. Coleiro
-- W. Corradi
-- M. W. Coughlin
-- T. Culino
-- D. Darson
-- D. Datashvili
-- G. de Wasseige
-- T. Dietrich
-- F. Dolon
-- D. Dornic
-- J. Dubouil
-- J.-G. Ducoin
-- P.-A. Duverne
-- A. Esamdin
-- A. Fouad
-- F. Guo
-- V. Godunova
-- P. Gokuldass
-- N. Guessoum
-- E. Gurbanov
-- R. Hainich
-- E. Hasanov
-- P. Hello
-- T. Hussenot-Desenonges
-- R. Inasaridze
-- A. Iskandar
-- E. E. O. Ishida
-- N. Ismailov
-- T. Jegou du Laz
-- D. A. Kann
-- G. Kapanadze
-- S. Karpov
-- R. W. Kiendrebeogo
-- A. Klotz
-- N. Kochiashvili
-- A. Kaeouach
-- J.-P. Kneib
-- W. Kou
-- K. Kruiswijk
-- S. Lombardo
-- M. Lamoureux
-- N. Leroy
-- A. Le Van Su
-- J. Mao
-- M. Masek
-- T. Midavaine
-- A. Moeller
-- D. Morris
-- R. Natsvlishvili
-- F. Navarete
-- S. Nissanke
-- K. Noonan
-- K. Noysena
-- N. B. Orange
-- J. Peloton
-- M. Pilloix
-- T. Pradier
-- M. Prouza
-- G. Raaijmakers
-- Y. Rajabov
-- J.-P. Rivet
-- Y. Romanyuk
-- L. Rousselot
-- F. Ruenger
-- V. Rupchandani
-- T. Sadibekova
-- N. Sasaki
-- A. Simon
-- K. Smith
-- O. Sokoliuk
-- X. Song
-- A. Takey
-- Y. Tillayev
-- I. Tosta e Melo
-- D. Turpin
-- A. de Ugarte Postigo
-- M. Vardosanidze
-- X. F. Wang
-- D. Vernet
-- Z. Vidadi
-- J. Zhu
-- Y. Zhu
+- Agayeva et al.
 date: '2022-01-01T00:00:00Z'
 publication_types:
 - collaboration
 publication_years:
 - '2022'
 featured: false
+abstract: GRANDMA is a world-wide collaboration with the primary scientific goal of
+  studying gravitational-wave sources, discovering their electromagnetic counterparts
+  and characterizing their emission. GRANDMA involves astronomers, astrophysicists,
+  gravitational- wave physicists, and theorists. GRANDMA is now a truly global network
+  of telescopes, with (so far) 30 telescopes in both hemispheres. It incorporates
+  a citizen science programme (Kilonova-Catcher) which constitutes an opportunity
+  to spread the interest in time-domain astronomy. The telescope network is an heterogeneous
+  set of already-existing observing facilities that operate coordinated as a single
+  observatory. Within the network there are wide-field imagers that can observe large
+  areas of the sky to search for optical counterparts, narrow- field instruments that
+  do targeted searches within a predefined list of host-galaxy candidates, and larger
+  telescopes that are devoted to characterization and follow-up of the identified
+  counterparts. Here we present an overview of GRANDMA after the third observing run
+  of the LIGO/VIRGO gravitational-wave observatories in 2019 ‒ 2020 and its ongoing
+  preparation for the forthcoming fourth observational campaign (O4). Additionally,
+  we review the potential of GRANDMA for the discovery and follow-up of other types
+  of astronomical transients.
 publication:
   name: 'Observatory Operations: Strategies, Processes, and Systems IX'
   volume: '12186'
@@ -119,4 +35,5 @@ publication:
 hugoblox:
   ids:
     doi: 10.1117/12.2630240
+    arxiv: '2207.10178'
 ---

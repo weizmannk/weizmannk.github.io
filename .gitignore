@@ -16,6 +16,10 @@ cv/build/
 # Empty placeholder — no custom icons added (using theme's built-in icon pack)
 assets/media/icons/custom/
 
+# Python virtual environments
+.venv/
+venv/
+
 # Node.js & package managers
 node_modules/
 

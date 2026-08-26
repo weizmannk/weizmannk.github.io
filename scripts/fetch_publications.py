@@ -25,7 +25,7 @@ from bibtexparser.bwriter import BibTexWriter
 from bibtexparser.bibdatabase import BibDatabase
 
 ADS_SEARCH_URL = "https://api.adsabs.harvard.edu/v1/search/query"
-ADS_EXPORT_URL = "https://api.adsabs.harvard.edu/v1/export/bibtex"
+ADS_EXPORT_URL = "https://api.adsabs.harvard.edu/v1/export/bibtexabs"
 ORCID_API_ROOT = "https://pub.orcid.org/v3.0"
 DEFAULT_ORCID = "0000-0002-9108-5059"
 DEFAULT_BIB_PATH = Path(__file__).resolve().parent.parent / "bibliography" / "publications.bib"
@@ -60,8 +60,11 @@ JOURNAL_NORMALIZATION = {
     "the astronomical society of the pacific": "Publications of the Astronomical Society of the Pacific",
     "publications of the astronomical society of the pacific": "Publications of the Astronomical Society of the Pacific",
     "phrvd": "Physical Review D",
+    "prd": "Physical Review D",
     "physical review d": "Physical Review D",
     "american physical society": "Physical Review D",
+    "prl": "Physical Review Letters",
+    "physical review letters": "Physical Review Letters",
     "nature communications": "Nature Communications",
     "the nature communications": "Nature Communications",
     "astroparticle physics": "Astroparticle Physics",
@@ -119,7 +122,9 @@ def normalize_surname(text: str) -> str:
 def normalize_journal(name: str | None) -> str | None:
     if not name:
         return name
-    key = name.strip().lower().rstrip(".")
+    # ADS's bibtexabs export gives AASTeX journal macros (e.g. "\apj")
+    # instead of a spelled-out name.
+    key = name.strip().lstrip("\\").lower().rstrip(".")
     return JOURNAL_NORMALIZATION.get(key, name.strip())
 
 
@@ -325,6 +330,7 @@ BIBLIOGRAPHIC_FIELDS = {
     "adsurl",
     "adsnote",
     "publisher",
+    "abstract",
 }
 
 
@@ -499,6 +505,7 @@ def write_bib(entries: list[dict], bib_path: Path) -> None:
         "highlight",
         "review_needed",
         "note",
+        "abstract",
     ]
     bib_path.parent.mkdir(parents=True, exist_ok=True)
     bib_path.write_text(HEADER + writer.write(db), encoding="utf-8")
