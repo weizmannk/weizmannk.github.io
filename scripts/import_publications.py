@@ -87,9 +87,9 @@ def delatex(text: str) -> str:
     t = re.sub(r"\\textbf\{([^{}]*)\}", r"\1", t)
     t = re.sub(r"\\emph\{([^{}]*)\}", r"\1", t)
     t = t.replace(r"\ldots", "\u2026")
-    t = re.sub(r"\\c\{([a-zA-Z])\}", lambda m: unicodedata.normalize("NFC", m.group(1) + "\u0327"), t)
+    t = re.sub(r"\{?\\c\{([a-zA-Z])\}\}?", lambda m: unicodedata.normalize("NFC", m.group(1) + "̧"), t)
     t = re.sub(
-        r"\\([\'`\"^~]|v(?=\{))\{?([a-zA-Z])\}?",
+        r"\{?\\([\'`\"^~]|v(?=\{))\{?([a-zA-Z])\}?\}?",
         lambda m: unicodedata.normalize("NFC", m.group(2) + _ACCENT_COMBINING[m.group(1)]),
         t,
     )

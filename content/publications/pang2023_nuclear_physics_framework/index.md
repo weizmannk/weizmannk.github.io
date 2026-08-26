@@ -9,7 +9,7 @@ authors:
 - Tews, Ingo
 - Almualla, Mouza
 - Barna, Tyler
-- Kiendrebeogo, Ramodgwend{é Weizmann
+- Kiendrebeogo, Ramodgwendé Weizmann
 - Kunert, Nina
 - Mansingh, Gargi
 - Reed, Brandon

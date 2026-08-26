@@ -13,7 +13,7 @@ authors:
 - Benkhaldoun, Z.
 - Beradze, S.
 - Berezin, D.
-- '{Boër, M.'
+- Boër, M.
 - Broens, E.
 - Brunier, S.
 - Bulla, M.
@@ -70,7 +70,7 @@ authors:
 - Lu, F.~J.
 - Mao, J.
 - Marchais, D.
-- '{Ménard, R.'
+- Ménard, R.
 - Morris, D.
 - Natsvlishvili, R.
 - Nedora, V.

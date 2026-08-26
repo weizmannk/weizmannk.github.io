@@ -6,7 +6,7 @@ authors:
 - Nir, Guy
 - Antier, Sarah
 - du Laz, Theophile Jegou
-- van der Walt, St{éfan
+- van der Walt, Stéfan
 - Crellin-Quick, Arien
 - Culino, Thomas
 - Duev, Dmitry A.
@@ -16,7 +16,7 @@ authors:
 - Lilleboe, Jada
 - Shin, Kyung Min
 - Singer, Leo P.
-- Ahumada, Tom{ás
+- Ahumada, Tomás
 - Anand, Shreya
 - Bellm, Eric C.
 - Dekany, Richard
@@ -47,11 +47,11 @@ authors:
 - Kishore, Sulekha
 - Jani, Shloke
 - Mahanty, Stephen K.
-- Liu, C{éline
+- Liu, Céline
 - Llinares, Laura
 - Makarison, Jolyane
-- '{Olliéric, Alix'
-- Perez, In{ès
+- Olliéric, Alix
+- Perez, Inès
 - Pont, Lydie
 - Sharma, Vyom
 date: '2023-01-01T00:00:00Z'

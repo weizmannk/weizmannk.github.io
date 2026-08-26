@@ -51,9 +51,9 @@ authors:
 - Leroy, N.
 - Van Su, A. Le
 - Marchais, D.
-- '{Mašek}, M.'
+- Mašek, M.
 - Midavaine, T.
-- '{Möller, A.'
+- Möller, A.
 - Morris, D.
 - Natsvlishvili, R.
 - Navarete, F.

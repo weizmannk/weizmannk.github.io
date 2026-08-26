@@ -13,6 +13,8 @@ publication_types:
 publication_years:
 - '2025'
 featured: false
+abstract: This document provides the maximum-posterior hyperparameters for the Broken
+  Power Law + 2 Peak (BP2P) population model, inferred from the GWTC-4 catalog
 links:
 - type: site
   url: https://dcc.ligo.org/LIGO-T2500311/public

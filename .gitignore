@@ -19,6 +19,7 @@ assets/media/icons/custom/
 # Python virtual environments
 .venv/
 venv/
+.ipynb_checkpoints/
 
 # Node.js & package managers
 node_modules/

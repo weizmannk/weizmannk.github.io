@@ -11,7 +11,7 @@ authors:
 - Toivonen, Andrew
 - VandenBerg, R. Oliver
 - Anand, Shreya
-- Ahumada, Tom{ás
+- Ahumada, Tomás
 - Karambelkar, Viraj
 - Coughlin, Michael W.
 - Dietrich, Tim

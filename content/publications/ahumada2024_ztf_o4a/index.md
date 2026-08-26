@@ -2,7 +2,7 @@
 title: 'Searching for Gravitational Wave Optical Counterparts with the Zwicky Transient
   Facility: Summary of O4a'
 authors:
-- Ahumada, Tom{ás
+- Ahumada, Tomás
 - Anand, Shreya
 - Coughlin, Michael W.
 - Gupta, Vaidehi
@@ -40,7 +40,7 @@ authors:
 - Kumar, Harsh
 - Kumar, Ravi
 - Pezzella, Marianna
-- '{Sagués-Carracedo, Ana'
+- Sagués-Carracedo, Ana
 - Sravan, Niharika
 - Bloom, Joshua S.
 - Chen, Tracy X.

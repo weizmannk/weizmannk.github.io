@@ -9,7 +9,7 @@ authors:
 - Toivonen, Andrew
 - Jegou du Laz, Theophile
 - Erb, Ethan
-- Ahumada, Tom{ás
+- Ahumada, Tomás
 - Barna, Tyler
 - Helou, George
 - Smith, Roger
