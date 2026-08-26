@@ -9,6 +9,8 @@ publication_types:
 publication_years:
 - '2022'
 featured: false
+tags:
+- large-team
 abstract: GRANDMA is a world-wide collaboration with the primary scientific goal of
   studying gravitational-wave sources, discovering their electromagnetic counterparts
   and characterizing their emission. GRANDMA involves astronomers, astrophysicists,

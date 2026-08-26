@@ -9,6 +9,8 @@ publication_types:
 publication_years:
 - '2025'
 featured: false
+tags:
+- core-team
 hugoblox:
   ids:
     arxiv: '2508.18082'

@@ -9,6 +9,8 @@ publication_types:
 publication_years:
 - '2026'
 featured: false
+tags:
+- large-team
 abstract: LIGO, Virgo, and KAGRA form a network of gravitational-wave observatories.
   Data and analysis results from this network are made publicly available through
   the Gravitational Wave Open Science Center. This paper describes open data from

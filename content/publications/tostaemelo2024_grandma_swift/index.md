@@ -117,6 +117,8 @@ publication_types:
 publication_years:
 - '2024'
 featured: false
+tags:
+- large-team
 publication:
   name: Astronomy & Astrophysics
   volume: '682'

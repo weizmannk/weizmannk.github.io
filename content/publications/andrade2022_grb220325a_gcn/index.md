@@ -12,4 +12,6 @@ publication_types:
 publication_years:
 - '2022'
 featured: false
+tags:
+- core-team
 ---

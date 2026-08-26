@@ -9,6 +9,8 @@ publication_types:
 publication_years:
 - '2026'
 featured: false
+tags:
+- large-team
 abstract: We present an all-sky search for long-duration gravitational waves (GWs)
   from the first part of the LIGO-Virgo-KAGRA fourth observing run (O4), called O4a
   and comprising data taken between May 24, 2023, and January 16, 2024. The GW signals

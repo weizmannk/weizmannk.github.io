@@ -36,6 +36,13 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_BIB_PATH = ROOT / "bibliography" / "publications.bib"
 DEFAULT_OUTPUT_DIR = ROOT / "content" / "publications"
 
+# Author-count threshold splitting "core-team" (lead/small-team) work from
+# "large-team" network/collaboration papers, for the website's Refereed
+# Publications section. Chosen at the natural gap in this bibliography
+# between small research-team papers (<=21 authors) and large GRANDMA/survey
+# network papers (>=52 authors).
+CORE_TEAM_MAX_AUTHORS = 25
+
 # bibliography/publications.bib publication_type -> Hugo taxonomy term.
 # Hyphenated (not underscored) so the theme's Title-case display fallback
 # reads "In-Preparation" / "Technical-Report" rather than showing a raw "_".
@@ -86,6 +93,7 @@ def delatex(text: str) -> str:
     t = t.replace(r"\textemdash", "\u2014").replace(r"\textendash", "\u2013")
     t = re.sub(r"\\textbf\{([^{}]*)\}", r"\1", t)
     t = re.sub(r"\\emph\{([^{}]*)\}", r"\1", t)
+    t = re.sub(r"\\texttt\{([^{}]*)\}", r"\1", t)
     t = t.replace(r"\ldots", "\u2026")
     t = re.sub(r"\{?\\c\{([a-zA-Z])\}\}?", lambda m: unicodedata.normalize("NFC", m.group(1) + "̧"), t)
     t = re.sub(
@@ -129,6 +137,13 @@ def build_front_matter(entry: dict) -> dict:
     else:
         authors = split_authors(entry.get("author", ""))
 
+    # Distinguishes lead/small-team work from large-network or full-collaboration
+    # papers (52+ authors here) where individual contribution isn't visible in
+    # a byline. Used only to split the website's Refereed Publications section;
+    # doesn't affect publication_type or the CV.
+    raw_author_count = len(entry.get("author", "").split(" and ")) if entry.get("author") else 0
+    team_tags = ["core-team"] if raw_author_count <= CORE_TEAM_MAX_AUTHORS else ["large-team"]
+
     fm = {
         "title": clean(entry.get("title", "")),
         "authors": authors,
@@ -136,7 +151,7 @@ def build_front_matter(entry: dict) -> dict:
         "publication_types": [hugo_type],
         "publication_years": [str(year)] if year else [],
         "featured": str(entry.get("featured", "")).lower() == "true",
-        "tags": [],
+        "tags": team_tags,
         "abstract": clean(entry.get("abstract", "")),
     }
 

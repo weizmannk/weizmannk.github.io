@@ -11,6 +11,8 @@ publication_types:
 publication_years:
 - '2023'
 featured: false
+tags:
+- core-team
 links:
 - type: site
   url: https://dcc.ligo.org/T2300385

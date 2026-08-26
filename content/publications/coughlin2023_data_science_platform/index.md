@@ -60,6 +60,8 @@ publication_types:
 publication_years:
 - '2023'
 featured: true
+tags:
+- large-team
 abstract: 'SkyPortal is an open-source software package designed to discover interesting
   transients efficiently, manage follow-up, perform characterization, and visualize
   the results. By enabling fast access to archival and catalog data, crossmatching

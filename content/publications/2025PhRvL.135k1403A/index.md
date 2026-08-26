@@ -8,6 +8,8 @@ publication_types:
 publication_years:
 - '2025'
 featured: false
+tags:
+- large-team
 abstract: The gravitational-wave signal GW250114 was observed by the two LIGO detectors
   with a network matched-filter signal-to-noise ratio of 80. The signal was emitted
   by the coalescence of two black holes with near-equal masses m1=33.6-0.8+1.2M☉ and

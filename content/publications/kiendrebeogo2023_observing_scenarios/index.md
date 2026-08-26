@@ -25,6 +25,8 @@ publication_types:
 publication_years:
 - '2023'
 featured: true
+tags:
+- core-team
 abstract: An advanced LIGO and Virgo's third observing run brought another binary
   neutron star merger (BNS) and the first neutron-star black hole mergers. While no
   confirmed kilonovae were identified in conjunction with any of these events, continued

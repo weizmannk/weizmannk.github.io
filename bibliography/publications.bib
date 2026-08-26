@@ -664,7 +664,8 @@ discovered by current and next-generation public surveys.}},
   featured = {true},
   highlight = {R. Weizmann Kiendrebeogo},
   note = {Submitted to The Astrophysical Journal Supplement Series},
-  order = {1}
+  order = {1},
+  abstract = {The surge in publicly available photometric alerts from wide-field surveys requires automated tools for real-time transient classification. We present NMMA--Astro-COLIBRI, an on-demand Bayesian classification service that couples the Nuclear-physics and Multi-Messenger Astrophysics (NMMA) inference framework to the Astro-COLIBRI real-time multi-messenger platform. After the detection of an optical transient, if photometry is available, it is quality-filtered. The filtered photometry is fitted by nested sampling against a user-selected model from a library of eleven supernova templates; results are delivered to every user within minutes. Applying two or more models on the same optical transient, the service reports the corresponding log Bayes factors as a quantitative ranking of competing subtypes. We demonstrate the workflow on SN 2021ugl (ZTF21abotose), a Type IIb supernova initially mistaken for a kilonova candidate by automated real-time pipelines, comparing competing supernova and kilonova models. In an early-time configuration using only the first ~ 6 days of photometry in two bands (ZTF g and r), so ten days before spectroscopic confirmation, the empirical Type IIb template recovers the correct classification, favored over both the kilonova template and the kilonova-mimicking shock-cooling model. In the full 47-day, three-band baseline, it again achieves the highest evidence over every competing supernova and kilonova template. These results highlight the importance of a comprehensive supernova template library for kilonova discrimination in the multi-survey era.}
 }
 
 @misc{kiendrebeogo2026_nmma_fits_sn2021ugl,
@@ -851,7 +852,8 @@ intervals.}},
   featured = {false},
   highlight = {R. Weizmann Kiendrebeogo},
   note = {Submitted to Publications of the Astronomical Society of the Pacific},
-  order = {2}
+  order = {2},
+  abstract = {We present a new Astro-COLIBRI component that converts free-text GCN Circulars into structured, event-linked follow-up records and combines them with structured reports submitted directly by the community. A continuously running Circular listener associates new reports with transient events, applies deterministic pre-analysis, and invokes a schema-constrained large language model extraction step for photometry, contacts, redshifts, and other reported results and metadata. The resulting records are submitted to the Astro-COLIBRI API, normalized into a common event-level follow-up database, and exposed through the web and mobile interfaces as report summaries, contact tools, optical-afterglow context figures, and downloadable CSV or VOTable products. After tuning, all 1,775 Circulars of an operational evaluation corpus covering the first half of 2026 completed the workflow without failures. An internal human audit of 210 Circulars confirmed 25,827 of 25,880 definite field-level decisions (99.80%), with the remaining errors confined to observation timing and facility attribution in eight of 231 assessed reports. Extracted redshifts agree with the independent GRBweb compilation for 228 of the 249 events the two share, and every disagreement traces to a limit, a candidate-host estimate, or a value later refined rather than to a misread Circular. The final pipeline was applied to the full GCN archive since 2016, yielding 68,393 individual observations from 26,811 reports across 5,787 transient events, and is now running in real time on new Circulars. The reusable parsing and normalization pipeline is released as the open-source Python package astro-colibri-circular-parser. This paper describes the scientific motivation, architecture, extraction schema, quality-control safeguards, user-facing products, and current use-cases of the system.}
 }
 
 @article{2025ApJ...993L..21A,
@@ -1034,7 +1036,8 @@ credibility.}},
   featured = {true},
   highlight = {Weizmann Kiendrebeogo},
   note = {arXiv record spells the name "Kiendrébéogo"; normalized to unaccented form per convention.},
-  order = {18}
+  order = {18},
+  abstract = {The rise of direct detection of gravitational waves (GWs) started a new era in multi-messenger astrophysics. Like GWs, many other astrophysical transient sources suffer from poor localization, which can span tens to thousands of square degrees in the sky. Moreover, as the detection horizon for these transients widens and the detection rate increases, current electromagnetic follow-up facilities require tools to optimize the follow-up of poorly localized events and save valuable telescope time for their time-domain astrophysics programs. We present \texttt{tilepy}, a Python library, and a tool to optimize the follow-up of poorly localized transient events. \texttt{tilepy} is used for GWs as well as other poorly localized events such as gamma-ray bursts detected by Fermi-GBM and neutrino candidates from IceCube. \texttt{tilepy} has also been optimized to integrate smoothly with multiple ground-based observatories operating individually or simultaneously with diverse observational configurations. In this contribution, we introduce the latest developments from \texttt{tilepy}, mainly the ability to operate with space-based observatories while taking into consideration factors such as Earth, Sun, and Moon occultation and South Atlantic Anomaly passage. We present innovations to the platform, handling a variety of field of view shapes, the possibility of optimizing observation scheduling with artificial intelligence tools and examples of its use on transient astrophysical events.}
 }
 
 @article{criswell2025_uvex_em_followup,
@@ -1329,7 +1332,8 @@ black hole mergers.}},
   keywords = {manual},
   highlight = {Kiendrebeogo},
   note = {Given names not available from the arXiv record at fetch time; entry kept manual — see scripts/fetch_publications.py.},
-  order = {19}
+  order = {19},
+  abstract = {In the era of real-time astronomy, citizen scientists play an increasingly important role in the discovery and follow-up of transient astrophysical phenomena. From local astronomical societies to global initiatives, amateur astronomers contribute valuable observational data that complement professional efforts. Astro-COLIBRI facilitates these contributions by providing a user-friendly platform that integrates real-time alerts, data visualization tools, and collaborative features to support astronomers at all levels. The Astro-COLIBRI Citizen Science Program provides engagement opportunities across multiple scales. At the grassroots level, we collaborate with local astronomy clubs, equipping them with accessible tools for transient event monitoring. National and international networks, such as RAPAS in France, leverage Astro-COLIBRI's real-time capabilities for coordinated observations. On a global scale, we actively participate in high-impact citizen science and capacity building initiatives, including the International Astronomical Union (IAU) Citizen Science Program and the "Open Universe" initiative led by the United Nations Office for Outer Space Affairs (UNOOSA). These collaborations enhance the accessibility of real-time astrophysical data and foster inclusive participation in cutting-edge astronomy. In this contribution, we will present the Astro-COLIBRI Citizen Science Program, highlighting its technical framework, community impact, and case studies of successful amateur contributions. We will showcase how our platform facilitates the rapid exchange of information between professional and amateur astronomers, democratizing access to multi-messenger astrophysics and enabling the global community to contribute meaningfully to time-domain discoveries.}
 }
 
 @misc{schussler2025_astrocolibri_platform,
@@ -1345,7 +1349,8 @@ black hole mergers.}},
   keywords = {manual},
   highlight = {Kiendrebeogo},
   note = {Given names not available from the arXiv record at fetch time; entry kept manual — see scripts/fetch_publications.py.},
-  order = {20}
+  order = {20},
+  abstract = {The detection of transient phenomena such as Gamma-Ray Bursts (GRBs), Fast Radio Bursts (FRBs), stellar flares, novae, and supernovae, alongside novel cosmic messengers like high-energy neutrinos and gravitational waves, has transformed astrophysics in recent years. Maximizing the discovery potential of multi-messenger and multi-wavelength follow-up observations, as well as serendipitous detections, requires a tool that rapidly compiles and contextualizes relevant information for each new event. We present Astro-COLIBRI, an advanced platform designed to meet this challenge. Astro-COLIBRI integrates a public RESTful API, real-time databases, a cloud-based alert system, and user-friendly clients (a website and mobile apps for iOS and Android). It processes astronomical alerts from multiple streams in real time, filtering them based on user-defined criteria and placing them in their multi-wavelength and multi-messenger context. The platform offers intuitive data visualization, a quick summary of relevant event properties, and an assessment of observing conditions at numerous observatories worldwide. We here describe its architecture, data resources, and main functionalities. We highlight the automatic collection of photometric data from a variety of large scale optical surveys, a recently added feature that significantly improves the capabilities of the Astro-COLIBRI platform.}
 }
 
 @article{singer2025_uvex_optimal,

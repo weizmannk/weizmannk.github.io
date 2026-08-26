@@ -8,6 +8,8 @@ publication_types:
 publication_years:
 - '2026'
 featured: false
+tags:
+- large-team
 abstract: The binary black hole signal GW250114, the loudest gravitational wave detected
   to date, offers a unique opportunity to test Einstein's general relativity (GR)
   in the high-velocity, strong-gravity regime and probe whether the remnant conforms

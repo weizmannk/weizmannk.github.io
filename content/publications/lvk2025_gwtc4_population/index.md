@@ -8,6 +8,8 @@ publication_types:
 publication_years:
 - '2026'
 featured: false
+tags:
+- large-team
 abstract: We detail the population properties of binary neutron star, neutron star–black
   hole binary, and binary black hole mergers using 158 events from the cumulative
   Gravitational-Wave Transient Catalog 4.0. The black hole primary mass distribution

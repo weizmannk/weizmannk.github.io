@@ -10,6 +10,8 @@ publication_types:
 publication_years:
 - '2026'
 featured: false
+tags:
+- large-team
 abstract: 'We present the first directed searches for long-transient and continuous
   gravitational waves from ultralight vector boson clouds around known black holes
   (BHs). We use LIGO data from the first part of the fourth LIGO-Virgo-KAGRA observing

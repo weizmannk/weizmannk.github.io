@@ -9,6 +9,8 @@ publication_types:
 publication_years:
 - '2026'
 featured: false
+tags:
+- large-team
 abstract: 'Version 4.0 of the Gravitational-Wave Transient Catalog (GWTC-4.0) adds
   new candidates detected by the LIGO, Virgo, and KAGRA observatories through the
   first part of the fourth observing run (O4a: 2023 May 24 15:00:00 to 2024 January

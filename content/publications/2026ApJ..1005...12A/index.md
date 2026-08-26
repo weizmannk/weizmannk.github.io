@@ -8,6 +8,8 @@ publication_types:
 publication_years:
 - '2026'
 featured: false
+tags:
+- large-team
 abstract: Among known neutron stars, the Vela pulsar is one of the best targets for
   gravitational-wave searches. It is also one of the most prolific in terms of glitches,
   which are sudden frequency changes in a pulsar's rotation. Such glitches could cause

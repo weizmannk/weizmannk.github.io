@@ -9,6 +9,8 @@ publication_types:
 publication_years:
 - '2025'
 featured: false
+tags:
+- large-team
 abstract: We present results from a search for X-ray/gamma-ray counterparts of gravitational-wave
   (GW) candidates from the third observing run (O3) of the LIGO–Virgo–KAGRA network
   using the Swift Burst Alert Telescope (Swift-BAT). The search includes 636 GW candidates

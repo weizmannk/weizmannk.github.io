@@ -9,6 +9,8 @@ publication_types:
 publication_years:
 - '2024'
 featured: false
+tags:
+- large-team
 abstract: We report the observation of a coalescing compact binary with component
   masses 2.5–4.5 M ☉ and 1.2–2.0 M ☉ (all measurements quoted at the 90% credible
   level). The gravitational-wave signal GW230529_181500 was observed during the fourth

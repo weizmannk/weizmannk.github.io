@@ -26,6 +26,8 @@ publication_types:
 publication_years:
 - '2024'
 featured: false
+tags:
+- core-team
 abstract: Binary neutron star mergers and neutron star-black hole mergers are multi-messenger
   sources that can be detected in gravitational waves and in electromagnetic radiation.
   The low electron fraction of neutron star merger ejecta favors the production of

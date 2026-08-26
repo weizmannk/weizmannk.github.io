@@ -9,6 +9,8 @@ publication_types:
 publication_years:
 - '2026'
 featured: false
+tags:
+- large-team
 abstract: 'We present results from directed searches for continuous gravitational
   waves from a sample of 15 nearby supernova remnants, likely hosting young neutron
   star candidates, using data from the first eight months of the fourth observing

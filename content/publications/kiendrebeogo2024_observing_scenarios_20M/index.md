@@ -12,6 +12,8 @@ publication_types:
 publication_years:
 - '2024'
 featured: false
+tags:
+- core-team
 hugoblox:
   ids:
     doi: 10.5281/zenodo.12693653

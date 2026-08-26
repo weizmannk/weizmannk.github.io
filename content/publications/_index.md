@@ -7,12 +7,26 @@ type: landing
 sections:
   - block: collection
     content:
-      title: Refereed Publications
+      title: Refereed Publications — Lead & Core-Team Contributions
       count: 0
       filters:
         folders:
           - publications
         publication_type: refereed
+        tags:
+          - core-team
+    design:
+      view: citation
+  - block: collection
+    content:
+      title: Refereed Publications — Large Network Collaborations
+      count: 0
+      filters:
+        folders:
+          - publications
+        publication_type: refereed
+        tags:
+          - large-team
     design:
       view: citation
   - block: collection
